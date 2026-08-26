@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { INITIAL_PORTFOLIO } from '../data/weddingData';
+import { INITIAL_PORTFOLIO } from '../data/lightingData';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
@@ -30,16 +30,16 @@ export const submitInquiry = async (formData) => {
     if (web3Key) {
       try {
         const partnerText = formData.partnerName ? ` & ${formData.partnerName}` : '';
-        const emailBody = `New Wedding Consultation Inquiry Received!
+        const emailBody = `New Event Lighting & Tenting Consultation Inquiry Received!
 
-Couple: ${formData.name}${partnerText}
+Client: ${formData.name}${partnerText}
 Email: ${formData.email}
 Phone: ${formData.phone || 'Not provided'}
 Event Date: ${formData.date || 'Flexible'}
-Guests: ${formData.guests}
-Requested Service: ${formData.service}
+Venue Size / Guests: ${formData.guests}
+Requested Service / Theme: ${formData.service}
 
-Wedding Vision & Notes:
+Event Vision & Technical Notes:
 ${formData.vision || 'No additional notes provided.'}`;
 
         await fetch('https://api.web3forms.com/submit', {
@@ -48,7 +48,7 @@ ${formData.vision || 'No additional notes provided.'}`;
           body: JSON.stringify({
             access_key: web3Key,
             subject: `✨ New Event Lighting Inquiry: ${formData.name || 'Client'}${partnerText} (${formData.guests || '300+'} Guests)`,
-            from_name: 'Suraj Light House Inquiry',
+            from_name: "Suraj Light's Ranthambore",
             name: `${formData.name}${partnerText}`,
             email: formData.email,
             phone: formData.phone,
@@ -67,7 +67,7 @@ ${formData.vision || 'No additional notes provided.'}`;
     // Graceful feedback
     return {
       success: true,
-      message: `✨ Thank you, ${formData.name || 'Esteemed Client'}! Your event inquiry has been received. The Suraj Light House team will be in touch shortly!`,
+      message: `✨ Thank you, ${formData.name || 'Esteemed Client'}! Your event inquiry has been received. Suraj Light's master team will be in touch shortly!`,
       isMock: true
     };
   }
@@ -88,7 +88,7 @@ export const subscribeNewsletter = async (email, source = 'website') => {
     console.warn('Backend offline, simulated fallback newsletter subscription:', error.message);
     return {
       success: true,
-      message: `✨ Thank you for subscribing! Your wedding planning guide is on its way to ${email}`,
+      message: `✨ Thank you for subscribing! Your Royal Lighting & Tenting Catalog is on its way to ${email}`,
       isMock: true
     };
   }

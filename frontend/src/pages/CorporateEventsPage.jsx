@@ -14,7 +14,7 @@ const services = [
     highlight: 'Stage Truss & Lighting'
   },
   {
-    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=800&q=80',
     tag: 'Summits & Conventions',
     icon: 'fa-solid fa-microphone-lines',
     title: 'Conferences & Global Summits',
@@ -30,7 +30,7 @@ const services = [
     highlight: 'DMX Lighting Shows'
   },
   {
-    image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80',
     tag: 'Private Offsites',
     icon: 'fa-solid fa-gem',
     title: 'Executive Retreats in Ranthambore',
@@ -38,7 +38,7 @@ const services = [
     highlight: 'Ranthambore Venues'
   },
   {
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80',
     tag: 'Concert Grade Tech',
     icon: 'fa-solid fa-sliders',
     title: 'End-to-End AV & Heavy Power',
@@ -46,7 +46,7 @@ const services = [
     highlight: 'Zero Downtime Power'
   },
   {
-    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80',
     tag: 'Grand Pavilions',
     icon: 'fa-solid fa-campground',
     title: 'Corporate Tenting & Hangars',
@@ -57,29 +57,29 @@ const services = [
 
 const galleryImages = [
   { url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80', title: 'Leadership Summit Stage' },
-  { url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80', title: 'Grand Ballroom Awards' },
-  { url: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80', title: 'VIP Banquet Lighting' },
+  { url: 'https://images.unsplash.com/photo-photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80', title: 'Grand Ballroom Awards' },
+  { url: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80', title: 'VIP Banquet Lighting' },
   { url: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80', title: 'Brand Launch Stagecraft' }
 ];
 
 const CORPORATE_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=2000&q=85',
+    image: 'https://images.unsplash.com/photo-photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=2000&q=85',
     sub: '✦ Executive Excellence & Theatrical Production ✦',
     title: 'Corporate Events & Summits',
     desc: 'From multinational leadership conclaves and high-profile product unveilings to annual award galas, Suraj Light House delivers flawless lighting, heavy trussing, and generator power across Rajasthan.'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=2000&q=85',
+    image: 'https://images.unsplash.com/photo-photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=85',
     sub: '✦ Grand Gala Dinners & Award Ceremonies ✦',
     title: 'Opulent Brand Milestones',
     desc: 'Curating distinguished evenings of recognition, crystal chandelier dining canopies, and cinematic stage productions that resonate with industry leaders.'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=2000&q=85',
+    image: 'https://images.unsplash.com/photo-photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=2000&q=85',
     sub: '✦ State-of-the-Art Production & AV ✦',
     title: 'Immersive Product Reveals',
     desc: 'Transforming corporate grounds with high-power beam sharpies, computerized light consoles, and synchronised effects engineered for maximum impact.'

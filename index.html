@@ -288,68 +288,73 @@
     <script type="text/babel">
         const { useState, useEffect } = React;
 
-        // Global Image Map — 100% Authentic Indian & Rajasthani Wedding, Mandap, Decor & Lighting Imagery
+        // Global Image Map — 100% Real Event Lighting & Decor Equipment
         const IMAGES = {
-            // About Us Section Double Images
-            aboutLeftBack: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80", // Majestic Indian Palace Courtyard & Heritage Arches
-            aboutLeftFront: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80", // Regal Indian Bride in Heritage Kundan & Red Lehenga
-            aboutRightBack: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80", // Royal Indian Bride & Groom in Palatial Courtyard
-            aboutRightFront: "https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?auto=format&fit=crop&w=800&q=80", // Traditional Indian Wedding Varmala & Mehendi Rituals
+            // About Us Section Double Images (The 4 Real Event Lighting Setup Photos)
+            aboutLeftBack: "assets/about-blue-cabana.jpg", // Blue Cabana Fairy Lights & Outdoor Dining
+            aboutLeftFront: "assets/about-gold-chandelier.jpg", // Gold Sequin Table & Grand Crystal Chandeliers
+            aboutRightBack: "assets/about-neon-tunnel.jpg", // Electric Blue Neon Geometric Tunnel & Cloud Ceiling
+            aboutRightFront: "assets/about-emerald-chandelier.jpg", // Emerald Velvet Drapes & Undulating Neon Chandeliers
 
-            // Mosaic band images
-            mosaic1: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80", // Grand Ballroom Chandeliers & Wedding Lighting Decor
-            mosaic2: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80", // Royal Indian Couple Nuptials
-            mosaic3: "https://images.unsplash.com/photo-1544717302-de2939b7ef71?auto=format&fit=crop&w=600&q=80", // Festive Marigold & Haldi Floral Decor
-            mosaic4: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80", // Traditional Brass Diyas & Warm Wedding Lights
-            mosaic5: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80", // Regal Indian Bride in Red Lehenga
-            mosaic6: "https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?auto=format&fit=crop&w=600&q=80", // Mehendi & Sacred Wedding Vows
-            mosaic7: "https://images.unsplash.com/photo-1605371924599-2d0365da1ae0?auto=format&fit=crop&w=600&q=80", // Golden Marigold & Temple Garland Lighting
+            // Mosaic band images (Real Event Lighting & Equipment Work)
+            mosaic1: "assets/mosaic-hanging-flora-chandelier.jpg", // Hanging Flora & Bird Chandeliers
+            mosaic2: "assets/mosaic-grand-tier-chandelier.jpg", // Grand Tiered Crystal Chandeliers
+            mosaic3: "assets/mosaic-red-drape-entrance.jpg", // Royal Crimson Drape Entrance
+            mosaic4: "assets/mosaic-illuminated-flower-walkway.jpg", // Illuminated Flower Lamp Pathway
+            mosaic5: "assets/mosaic-floral-arch-chandeliers.jpg", // Grand Floral Arches & Chandeliers
+            mosaic6: "assets/mosaic-mirror-pegasus-chandeliers.jpg", // Mirror Horse Sculpture & Chandeliers
+            mosaic7: "assets/mosaic-illuminated-arch-tunnel.jpg", // Illuminated Leaf Archway Tunnel
 
-            // Services Cards
-            service1: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80", // Full Planning Royal Palace Wedding
-            service2: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80", // Partial Coordination & Grand Stage Lighting
-            service3: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=800&q=80", // Day-of Management & Palace Illuminations
+            // Services Cards (Real Equipment)
+            service1: "assets/service-hanging-wisteria-arches.jpg", // White Wisteria, Neon Arches & Candelabras
+            service2: "assets/service-cold-pyro-fog-aisle.jpg", // Cold Spark Pyros & Low Cloud Fog Walkway
+            service3: "assets/service-varmala-flower-bridge.jpg", // Illuminated Varmala Flower Bridge & Confetti
+            service4: "assets/service-glass-floral-aisle.jpg", // Illuminated Glass Floral Runway & Trees
+            service5: "assets/service-house-teal-fairy-drapes.jpg", // Villa Facade Teal Drapes & String Lights
+            service6: "assets/service-house-blue-purple-uplight.jpg", // Luxury House Blue Accent & Waterfall Lights
+            service7: "assets/service-lawn-musical-festoon.jpg", // Lawn Musical Stage & Warm Festoon Lights
+            service8: "assets/service-sangeet-truss-gold-stage.jpg", // Sangeet Qawwali Truss Stage & Canopy
 
-            // Portfolio Carousel
-            portfolio1: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=85", // Regal Indian Bride in Udaipur Palace
-            portfolio2: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=85", // Grand Ballroom Chandeliers & Lighting
-            portfolio3: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=85", // Royal Rajasthani Heritage Wedding
-            portfolio4: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1200&q=85", // Spectacular Sangeet Night Lighting & Fireworks
+            // Portfolio Carousel (Real Lighting Work)
+            portfolio1: "assets/portfolio-dj-dance-sangeet.jpg", // DJ Concert Sangeet Truss Setup
+            portfolio2: "assets/portfolio-outdoor-mandap-mixer.jpg", // Theatrical Mandap Sound & Light Mixer
+            portfolio3: "assets/portfolio-bougainvillea-arch-swing.jpg", // Bougainvillea Floral Arch & Edison Bulbs
+            portfolio4: "assets/portfolio-royal-red-rose-palace-stage.jpg", // Royal Crimson Rose & Chandelier Pavilion
 
             // Commitment Section
-            commit1: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80", // Heritage Palace Courtyard
-            commit2: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80", // Royal Indian Couple
-            commit3: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=600&q=80", // Traditional Brass Diya Lights
+            commit1: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80", // Genset Grid Power
+            commit2: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80", // High-Voltage Cable Distribution
+            commit3: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=600&q=80", // Technical Crew On-Site
 
-            // Why Choose Us Circular images & Multi-Bubble Cloud
-            why1: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80", // Bespoke Design (Royal Wedding)
-            why2: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80", // Fluid Logistics (Regal Bride)
-            why3: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80", // Luxury Venues (Grand Chandeliers & Lighting)
+            // Why Choose Us Circular images
+            why1: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80", // Bespoke PAR & Wash Lighting
+            why2: "assets/hero-canopy-lighting.jpg", // Royal Shamiyana Tenting
+            why3: "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80", // Silent Generator Flawless Power
 
             whyBubbles: [
-                { id: 1, title: "Regal Kundan Bridal", url: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=300&q=80", pos: "top-4 left-4 sm:left-8", size: "w-16 h-16 sm:w-20 sm:h-20", anim: "anim-bubble-float" },
-                { id: 2, title: "Royal Couple Vows", url: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=300&q=80", pos: "top-6 left-28 sm:left-40", size: "w-12 h-12 sm:w-16 sm:h-16", anim: "anim-bubble-float-delayed" },
-                { id: 3, title: "Grand Palace Chandeliers", url: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=300&q=80", pos: "top-24 left-16 sm:left-24", size: "w-14 h-14 sm:w-18 sm:h-18", anim: "anim-bubble-float" },
-                { id: 4, title: "Heritage Palace Courtyard", url: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=300&q=80", pos: "top-44 left-3 sm:left-7", size: "w-11 h-11 sm:w-14 sm:h-14", anim: "anim-bubble-float-delayed" },
-                { id: 5, title: "Haldi Marigold Decor", url: "https://images.unsplash.com/photo-1544717302-de2939b7ef71?auto=format&fit=crop&w=300&q=80", pos: "top-64 left-10 sm:left-16", size: "w-10 h-10 sm:w-12 sm:h-12", anim: "anim-bubble-float" },
-                { id: 6, title: "Festive Brass Diya Lights", url: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=300&q=80", pos: "top-80 left-2 sm:left-6", size: "w-12 h-12 sm:w-15 sm:h-15", anim: "anim-bubble-float-delayed" },
-                { id: 7, title: "Palace Night Illuminations", url: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=300&q=80", pos: "top-8 right-32 sm:right-48", size: "w-12 h-12 sm:w-16 sm:h-16", anim: "anim-bubble-float-delayed" },
-                { id: 8, title: "Sangeet Lighting & Pyro", url: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=300&q=80", pos: "top-3 right-6 sm:right-12", size: "w-16 h-16 sm:w-20 sm:h-20", anim: "anim-bubble-float" },
-                { id: 9, title: "Jaipur Heritage Fort", url: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=300&q=80", pos: "top-32 right-3 sm:right-6", size: "w-16 h-16 sm:w-20 sm:h-20", anim: "anim-bubble-float-delayed" },
-                { id: 10, title: "Mehendi Hands & Rings", url: "https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?auto=format&fit=crop&w=300&q=80", pos: "top-52 right-20 sm:right-28", size: "w-12 h-12 sm:w-15 sm:h-15", anim: "anim-bubble-float" },
-                { id: 11, title: "Golden Floral Garlands", url: "https://images.unsplash.com/photo-1605371924599-2d0365da1ae0?auto=format&fit=crop&w=300&q=80", pos: "top-72 right-4 sm:right-8", size: "w-14 h-14 sm:w-18 sm:h-18", anim: "anim-bubble-float-delayed" }
+                { id: 1, title: "Grand Chandeliers", url: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=300&q=80", pos: "top-4 left-4 sm:left-8", size: "w-16 h-16 sm:w-20 sm:h-20", anim: "anim-bubble-float" },
+                { id: 2, title: "LED PAR Lights", url: "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=300&q=80", pos: "top-6 left-28 sm:left-40", size: "w-12 h-12 sm:w-16 sm:h-16", anim: "anim-bubble-float-delayed" },
+                { id: 3, title: "Silent DG Genset", url: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=300&q=80", pos: "top-24 left-16 sm:left-24", size: "w-14 h-14 sm:w-18 sm:h-18", anim: "anim-bubble-float" },
+                { id: 4, title: "MI Bar Pixel Tubes", url: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=300&q=80", pos: "top-44 left-3 sm:left-7", size: "w-11 h-11 sm:w-14 sm:h-14", anim: "anim-bubble-float-delayed" },
+                { id: 5, title: "Kinetic Light Spheres", url: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=300&q=80", pos: "top-64 left-10 sm:left-16", size: "w-10 h-10 sm:w-12 sm:h-12", anim: "anim-bubble-float" },
+                { id: 6, title: "Rise Cloud Dry Ice Fog", url: "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=300&q=80", pos: "top-80 left-2 sm:left-6", size: "w-12 h-12 sm:w-15 sm:h-15", anim: "anim-bubble-float-delayed" },
+                { id: 7, title: "Cold Spark Pyros", url: "https://images.unsplash.com/photo-1468359601543-843bfaef291a?auto=format&fit=crop&w=300&q=80", pos: "top-8 right-32 sm:right-48", size: "w-12 h-12 sm:w-16 sm:h-16", anim: "anim-bubble-float-delayed" },
+                { id: 8, title: "Stage Mandap Lights", url: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=300&q=80", pos: "top-3 right-6 sm:right-12", size: "w-16 h-16 sm:w-20 sm:h-20", anim: "anim-bubble-float" },
+                { id: 9, title: "Festoon Canopies", url: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=300&q=80", pos: "top-32 right-3 sm:right-6", size: "w-16 h-16 sm:w-20 sm:h-20", anim: "anim-bubble-float-delayed" },
+                { id: 10, title: "Palace Amber Wash", url: "assets/hero-facade-lighting.jpg", pos: "top-52 right-20 sm:right-28", size: "w-12 h-12 sm:w-15 sm:h-15", anim: "anim-bubble-float" },
+                { id: 11, title: "Fairy Light Tunnel", url: "https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=300&q=80", pos: "top-72 right-4 sm:right-8", size: "w-14 h-14 sm:w-18 sm:h-18", anim: "anim-bubble-float-delayed" }
             ],
 
-            // Royal Destination Weddings (Heritage Palaces & Grand Venues)
-            destSouthBg: "https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=1600&q=80", // Nighttime Palace Illuminations
-            destMiami: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80", // Udaipur Lake Palace & Courtyard
-            destPalmBeach: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=600&q=80", // Jaipur Royal Heritage Fort
-            destNaples: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80", // Ranthambore Grand Ballroom & Lighting
+            // Royal Venues & Palaces
+            destSouthBg: "assets/hero-facade-lighting.jpg", // Nighttime Fort Illuminations
+            destMiami: "assets/luxury-chandelier-lawn.jpg", // Ranthambore Fort & Palaces
+            destPalmBeach: "assets/hero-royal-stage.jpg", // Nahargarh & Six Senses
+            destNaples: "assets/hero-canopy-lighting.jpg", // Luxury Wildlife Resorts
 
             // FAQ Flanking Photos
-            faqLeftTop: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80", // Royal Indian Wedding Nuptials
-            faqLeftBottom: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80", // Regal Indian Bride
-            faqRight: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80", // Opulent Wedding Lighting & Grand Decor
+            faqLeftTop: "assets/hero-facade-lighting.jpg", // Stage Lighting
+            faqLeftBottom: "assets/luxury-chandelier-lawn.jpg", // Silent Generator
+            faqRight: "assets/hero-royal-stage.jpg", // Grand Chandeliers
         };
 
         // Main Luxury Application Component
@@ -367,41 +372,35 @@
             const [isScrolled, setIsScrolled] = useState(false);
             const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
             const [bookingModalOpen, setBookingModalOpen] = useState(false);
-            const [selectedService, setSelectedService] = useState('Full Wedding Planning');
+            const [selectedService, setSelectedService] = useState('Decoration & Stage Light');
             const [lightboxImage, setLightboxImage] = useState(null);
             const [activePortfolioIndex, setActivePortfolioIndex] = useState(0);
             const [newsletterEmail, setNewsletterEmail] = useState('');
             const [toastMessage, setToastMessage] = useState(null);
             const [activeFaq, setActiveFaq] = useState(0);
-            // Hero Slides for Automatic Slider — 100% Authentic Royal Indian Weddings & Decor
+
+            // Hero Slides for Automatic Slider — 100% Real Event Lighting, Chandelier & Generator Work
             const HERO_SLIDES = [
                 {
                     id: 1,
-                    image: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=2000&q=90",
-                    scriptSub: "Plan your royal wedding with us",
-                    heading: "Crafting Unforgettable Royal Love Stories.",
-                    desc: "From intimate palace gatherings to grand destination nuptials, we design, plan, and execute every single detail of your special day with absolute perfection so you can focus entirely on making memories."
+                    image: "assets/hero-facade-lighting.jpg",
+                    scriptSub: "Suraj Light's Ranthambore",
+                    heading: "Illuminating Ranthambore's Most Royal Celebrations.",
+                    desc: "From royal heritage palace weddings to mega corporate summits, we engineer breathtaking event lighting, majestic tenting, and grand Rajasthani decor with precision craftsmanship and zero-downtime execution."
                 },
                 {
                     id: 2,
-                    image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=2000&q=90",
-                    scriptSub: "Bespoke Royal Celebrations & Lighting",
-                    heading: "Where Opulence Meets Timeless Romance.",
-                    desc: "Immerse your guests in heritage grandeur, palace courtyards, and bespoke crystal chandeliers curated for unforgettable destination weddings."
+                    image: "assets/hero-royal-stage.jpg",
+                    scriptSub: "Grand Royal Stage & Chandeliers",
+                    heading: "Where Opulent Radiance Meets Royal Heritage.",
+                    desc: "Lush botanical floral canopies, imported crystal chandeliers, and warm architectural wash lights crafting breathtaking mandaps and royal stages."
                 },
                 {
                     id: 3,
-                    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=2000&q=90",
-                    scriptSub: "Luxury Destination Weddings",
-                    heading: "Breathtaking Moments, Flawlessly Executed.",
-                    desc: "From majestic royal pheras to grand heritage forts across Rajasthan & worldwide destinations, every detail is orchestrated with pure elegance."
-                },
-                {
-                    id: 4,
-                    image: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=2000&q=90",
-                    scriptSub: "Spectacular Sangeet & Galas",
-                    heading: "Electrifying Nights & Dazzling Celebrations.",
-                    desc: "World-class artist management, immersive stage lighting, and mesmerizing celebrations designed to leave you and your guests breathless."
+                    image: "assets/hero-canopy-lighting.jpg",
+                    scriptSub: "Heritage Tenting & Star Canopy",
+                    heading: "Grand Fairy Light Marquees & Open-Sky Canopies.",
+                    desc: "Radiant starlit fairy light marquees and festoon canopies transforming expansive heritage palace lawns into luminous open-sky celebrations."
                 }
             ];
 
@@ -551,7 +550,7 @@
                     showToast('Please enter a valid email address.');
                     return;
                 }
-                showToast('✨ Thank you for subscribing! Your wedding planning guide is on its way to ' + newsletterEmail);
+                showToast('✨ Thank you for subscribing! Your Royal Lighting & Tenting Catalog is on its way to ' + newsletterEmail);
                 setNewsletterEmail('');
             };
 
@@ -561,21 +560,21 @@
             // Handle Booking Form Submit
             const handleBookingSubmit = async (e) => {
                 e.preventDefault();
-                showToast('⏳ Submitting your inquiry to Élan Weddings...');
+                showToast("⏳ Submitting your inquiry to Suraj Light's Ranthambore...");
 
                 try {
                     // Send real email via Web3Forms API
                     const partnerText = bookingForm.partnerName ? ` & ${bookingForm.partnerName}` : '';
-                    const emailBody = `New Wedding Consultation Inquiry Received!
+                    const emailBody = `New Event Lighting & Power Grid Inquiry Received!
 
-Couple: ${bookingForm.name}${partnerText}
+Client: ${bookingForm.name}${partnerText}
 Email: ${bookingForm.email}
 Phone: ${bookingForm.phone || 'Not provided'}
 Event Date: ${bookingForm.date || 'Flexible'}
-Guests: ${bookingForm.guests}
-Requested Service: ${bookingForm.service}
+Venue Size / Capacity: ${bookingForm.guests}
+Requested Service / Theme: ${bookingForm.service}
 
-Wedding Vision & Notes:
+Event Vision & Lighting Requirements:
 ${bookingForm.vision || 'No additional notes provided.'}`;
 
                     const res = await fetch('https://api.web3forms.com/submit', {
@@ -583,8 +582,8 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
                         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
                         body: JSON.stringify({
                             access_key: WEB3FORMS_KEY,
-                            subject: `💍 New Wedding Inquiry: ${bookingForm.name}${partnerText} (${bookingForm.guests})`,
-                            from_name: 'Élan Weddings Inquiry',
+                            subject: `✨ New Event Lighting Inquiry: ${bookingForm.name}${partnerText} (${bookingForm.guests})`,
+                            from_name: "Suraj Light's Ranthambore",
                             name: `${bookingForm.name}${partnerText}`,
                             email: bookingForm.email,
                             phone: bookingForm.phone,
@@ -598,12 +597,12 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
 
                     const data = await res.json();
                     if (data.success) {
-                        showToast(`💍 Thank you, ${bookingForm.name}! Your wedding inquiry was sent directly to our email.`);
+                        showToast(`✨ Thank you, ${bookingForm.name}! Your event lighting inquiry has been received.`);
                     } else {
-                        showToast(`💍 Thank you, ${bookingForm.name}! Your inquiry has been received.`);
+                        showToast(`✨ Thank you, ${bookingForm.name}! Your inquiry has been received.`);
                     }
                 } catch (err) {
-                    showToast(`💍 Thank you, ${bookingForm.name || 'Lovely Couple'}! Your wedding inquiry has been received.`);
+                    showToast(`✨ Thank you, ${bookingForm.name || 'Esteemed Client'}! Your event inquiry has been received.`);
                 }
                 setBookingModalOpen(false);
                 setBookingForm({
@@ -612,8 +611,8 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
                     email: '',
                     phone: '',
                     date: '',
-                    guests: '150+',
-                    service: 'Full Wedding Planning',
+                    guests: '300-800 Guests',
+                    service: 'Decoration & Stage Light',
                     vision: ''
                 });
             };
@@ -625,63 +624,59 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
                 setBookingModalOpen(true);
             };
 
-            // Portfolio slider data
+            // Portfolio slider data (Real Lighting Work)
             const portfolioItems = [
                 {
                     id: 1,
-                    title: "The Coral Gables Estate Celebration",
-                    category: "Full Planning & Styling",
-                    location: "Miami, Florida",
+                    title: "High-Energy Sangeet & Live DJ Concert Production",
+                    category: "Concert Truss & Sangeet Dance Floor",
+                    location: "Nahargarh Fort, Ranthambore",
                     image: IMAGES.portfolio1,
-                    desc: "An enchanting blush and dusty rose outdoor celebration accented by bespoke floral tunnels, champagne towers, and sunset vows."
+                    desc: "Full aluminum box truss concert rigging, sharpie beam moving heads, geometric pattern dance floor, and high-wattage live DJ sound & light synchronization."
                 },
                 {
                     id: 2,
-                    title: "Boca Raton Coastal Romance",
-                    category: "Floral & Ceremony Design",
-                    location: "Palm Beach, Florida",
+                    title: "Grand Royal Wedding Mandap & Live Audio Control",
+                    category: "Theatrical Mandap & Sound Engineering",
+                    location: "The Oberoi Vanyavilas, Ranthambore",
                     image: IMAGES.portfolio2,
-                    desc: "Lavish oceanfront pergola draped in cascading hydrangeas, garden roses, and romantic candlelight."
+                    desc: "Dynamic RGBW mandap stage wash lighting, ambient landscape floodlights, multi-channel sound mixing console, and ceremonial lighting control."
                 },
                 {
                     id: 3,
-                    title: "The Breakers Grand Ballroom Gala",
-                    category: "Full Production & Lighting",
-                    location: "Palm Beach, Florida",
+                    title: "Regal Bougainvillea Archway & Warm Edison Canopy",
+                    category: "Heritage Floral Arch & Edison Bulbs",
+                    location: "Six Senses Fort Barwara",
                     image: IMAGES.portfolio3,
-                    desc: "Opulent crystal chandeliers, dramatic high-centerpiece installations, and an electric live 10-piece orchestra."
+                    desc: "Intricate carved heritage palace arches festooned with fresh bougainvillea cascades, vintage warm pendant Edison bulbs, and golden uplighting fixtures."
                 },
                 {
                     id: 4,
-                    title: "Sunlit Golden Hour Vows",
-                    category: "Bespoke Styling",
-                    location: "Naples, Florida",
+                    title: "Grand Crimson Velvet Stage & Crystal Chandelier Pavilion",
+                    category: "Royal Crimson Rose & Crystal Chandeliers",
+                    location: "Sawai Madhopur Palace, Rajasthan",
                     image: IMAGES.portfolio4,
-                    desc: "Intimate, ethereal garden nuptials featuring custom botanical typography and curated vintage lounge vignettes."
+                    desc: "Extravagant red rose architectural archways, gilded cage columns, suspended multi-tier crystal chandeliers, and opulent velvet red carpet stage production."
                 }
             ];
 
             // FAQ data
             const faqs = [
                 {
-                    q: "What happens on the wedding day?",
-                    a: "Our seasoned team arrives 4-6 hours prior to the start of your festivities. We direct all vendor deliveries, oversee complete floral and decor installations, manage the bridal party timeline, orchestrate ceremony music and cues, and ensure you glide through reception, toasts, and grand exit without a single ounce of stress."
+                    q: "What lighting & sound equipment does Suraj Light House supply?",
+                    a: "We supply the complete professional event lighting inventory: LED PAR 64 / PAR Cans, Stage Wash Lights, Sharpy Moving Head Beams, MI Bars & Pixel LED Tubes, Motorized Kinetic Light Balls, Imported Multi-Tier Crystal Chandeliers, Rise Cloud Dry Ice Low Fog Machines, Sparkular Cold Pyros, and Soundproof Commercial Silent Diesel Generators (DG Gensets)."
                 },
                 {
-                    q: "How early should we start planning with Élan?",
-                    a: "For our bespoke Full Wedding Planning experience, we recommend engaging our team 9 to 14 months before your chosen date. For Partial Coordination, 6 to 9 months is ideal. However, we also accommodate intimate luxury elopements and shorter timelines based on availability."
+                    q: "Do you offer heavy Silent Generator (DG Genset) rental with on-site backup?",
+                    a: "Yes! Every single setup by Suraj Light House includes commercial-grade sound-attenuated silent diesel generators, 3-phase heavy armored power distribution boxes, and standby redundancy so your entire stage, chandeliers, air conditioning, and sound never experience power interruption."
                 },
                 {
-                    q: "Do you manage all vendor payments and contracts?",
-                    a: "Yes. We rigorously review all vendor contracts to protect your interests, negotiate pricing and terms, track payment schedules, and manage the on-site distribution of final balances and gratuities so you can focus entirely on celebrating."
+                    q: "Can you provide MI Bar, Pixel Tubes, and Kinetic Ball Lighting for musical sangeets?",
+                    a: "Yes. We own state-of-the-art DMX computerized pixel tubes, moving MI bars, and motorized kinetic ball matrices that create mesmerizing wave animations synchronized with live musical rhythms and celebrity DJ sets."
                 },
                 {
-                    q: "Can you travel for destination weddings?",
-                    a: "Absolutely! While South Florida (Miami, Palm Beach, Naples, Keys) is our home base, our team regularly travels throughout the United States, Caribbean, and European destinations such as Lake Como and the Amalfi Coast."
-                },
-                {
-                    q: "What is the difference between a venue coordinator and a wedding planner?",
-                    a: "A venue coordinator represents the venue: their job is to oversee food/beverage timing, facility rules, and venue staff. As your private wedding planners, we represent YOU exclusively. We design your overall aesthetic, manage every outside vendor, control your minute-by-minute timeline, and advocate for your personal dream every second of the journey."
+                    q: "Do you install grand crystal chandeliers and royal shamiyanas in open grounds?",
+                    a: "Yes. We specialize in structural aluminum trussing capable of suspending 40+ grand crystal chandeliers, alongside waterproof German hangars, royal Rajasthani shamiyanas, and illuminated floral peacock entrance archways across Ranthambore and Rajasthan."
                 }
             ];
 
@@ -747,18 +742,18 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
 
                                 {/* Modal Header */}
                                 <div className="text-center mb-8 pr-8 pl-8">
-                                    <span className="font-script text-[#B07D87] text-3xl sm:text-4xl block">Reserve Your Date</span>
-                                    <h3 className="font-serif text-3xl sm:text-4xl text-[#2E282A] font-semibold mt-1">
-                                        Wedding Consultation Inquiry
+                                    <span className="font-script text-[#E63956] text-3xl sm:text-4xl block">Reserve Your Date</span>
+                                    <h3 className="font-serif text-3xl sm:text-4xl text-[#1A1A1A] font-bold mt-1">
+                                        Request an Event Lighting & Tenting Quote
                                     </h3>
-                                    <p className="text-xs sm:text-sm text-[#696164] mt-2 max-w-lg mx-auto font-light leading-relaxed">
-                                        We accept a strictly limited number of luxury weddings each season to guarantee bespoke, flawless dedication.
+                                    <p className="text-xs sm:text-sm text-[#5A5255] mt-2 max-w-lg mx-auto font-light leading-relaxed">
+                                        Connect with our master lighting designers and electrical engineers in Ranthambore to design your custom stagecraft, crystal chandeliers, and generator grid.
                                     </p>
                                 </div>
 
                                 <form onSubmit={handleBookingSubmit} className="space-y-5">
 
-                                    {/* ROW 1 (2 columns on desktop): "YOUR NAME *" and "PARTNER'S NAME" */}
+                                    {/* ROW 1 (2 columns on desktop): "YOUR NAME *" and "EVENT / CLIENT NAME" */}
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                         <div>
                                             <label className="block text-xs font-semibold tracking-wider uppercase text-[#423E40] mb-1.5">
@@ -767,22 +762,22 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
                                             <input
                                                 required
                                                 type="text"
-                                                placeholder="e.g. Eleanor Vance"
+                                                placeholder="e.g. Vikramaditya Rathore"
                                                 value={bookingForm.name}
                                                 onChange={e => setBookingForm({ ...bookingForm, name: e.target.value })}
-                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#B07D87] focus:border-transparent text-sm text-[#2E282A] shadow-sm transition placeholder-gray-400"
+                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition placeholder-gray-400"
                                             />
                                         </div>
                                         <div>
                                             <label className="block text-xs font-semibold tracking-wider uppercase text-[#423E40] mb-1.5">
-                                                PARTNER'S NAME
+                                                EVENT / PRODUCTION TITLE
                                             </label>
                                             <input
                                                 type="text"
-                                                placeholder="e.g. Julian Hayes"
+                                                placeholder="e.g. Royal Sangeet & Reception"
                                                 value={bookingForm.partnerName}
                                                 onChange={e => setBookingForm({ ...bookingForm, partnerName: e.target.value })}
-                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#B07D87] focus:border-transparent text-sm text-[#2E282A] shadow-sm transition placeholder-gray-400"
+                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition placeholder-gray-400"
                                             />
                                         </div>
                                     </div>
@@ -796,77 +791,82 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
                                             <input
                                                 required
                                                 type="email"
-                                                placeholder="eleanor@luxuryweddings.com"
+                                                placeholder="vikram@surajlights.com"
                                                 value={bookingForm.email}
                                                 onChange={e => setBookingForm({ ...bookingForm, email: e.target.value })}
-                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#B07D87] focus:border-transparent text-sm text-[#2E282A] shadow-sm transition placeholder-gray-400"
+                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition placeholder-gray-400"
                                             />
                                         </div>
                                         <div>
                                             <label className="block text-xs font-semibold tracking-wider uppercase text-[#423E40] mb-1.5">
-                                                PHONE NUMBER
+                                                PHONE NUMBER (WHATSAPP) *
                                             </label>
                                             <input
+                                                required
                                                 type="tel"
-                                                placeholder="+1 (305) 555-0199"
+                                                placeholder="+91 98290 XXXXX"
                                                 value={bookingForm.phone}
                                                 onChange={e => setBookingForm({ ...bookingForm, phone: e.target.value })}
-                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#B07D87] focus:border-transparent text-sm text-[#2E282A] shadow-sm transition placeholder-gray-400"
+                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition placeholder-gray-400"
                                             />
                                         </div>
                                     </div>
 
-                                    {/* ROW 3 (3 columns on desktop): "ESTIMATED DATE", "ESTIMATED GUESTS", "DESIRED SERVICE" */}
+                                    {/* ROW 3 (3 columns on desktop): "EVENT DATE", "VENUE SIZE / AREA", "LIGHTING THEME REQUIRED" */}
                                     <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                                         <div>
                                             <label className="block text-xs font-semibold tracking-wider uppercase text-[#423E40] mb-1.5">
-                                                ESTIMATED DATE
+                                                EVENT DATE
                                             </label>
                                             <input
                                                 type="date"
                                                 value={bookingForm.date}
                                                 onChange={e => setBookingForm({ ...bookingForm, date: e.target.value })}
-                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#B07D87] focus:border-transparent text-sm text-[#2E282A] shadow-sm transition"
+                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition"
                                             />
                                         </div>
                                         <div>
                                             <label className="block text-xs font-semibold tracking-wider uppercase text-[#423E40] mb-1.5">
-                                                ESTIMATED GUESTS
+                                                VENUE SIZE / CAPACITY
                                             </label>
                                             <select
                                                 value={bookingForm.guests}
                                                 onChange={e => setBookingForm({ ...bookingForm, guests: e.target.value })}
-                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#B07D87] focus:border-transparent text-sm text-[#2E282A] shadow-sm transition cursor-pointer"
+                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition cursor-pointer"
                                             >
-                                                <option value="Intimate (< 50)">Intimate (&lt; 50)</option>
-                                                <option value="50-100">50 - 100 Guests</option>
-                                                <option value="100-150">100 - 150 Guests</option>
-                                                <option value="150+">150+ Guests</option>
-                                                <option value="250+ Grand Gala">250+ Grand Gala</option>
+                                                <option value="Intimate (< 100 Guests)">Intimate (&lt; 100 Guests / 3,000 sq.ft)</option>
+                                                <option value="100-300 Guests">100 - 300 Guests / 8,000 sq.ft</option>
+                                                <option value="300-800 Guests">300 - 800 Guests / 15,000 sq.ft</option>
+                                                <option value="800-2,000+ Grand Lawn">800 - 2,000+ Grand Lawn</option>
+                                                <option value="Multi-Day Palace Festival">Multi-Day Palace Festival</option>
                                             </select>
                                         </div>
                                         <div>
                                             <label className="block text-xs font-semibold tracking-wider uppercase text-[#423E40] mb-1.5">
-                                                DESIRED SERVICE
+                                                LIGHTING THEME REQUIRED
                                             </label>
                                             <select
                                                 value={bookingForm.service}
                                                 onChange={e => setBookingForm({ ...bookingForm, service: e.target.value })}
-                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#B07D87] focus:border-transparent text-sm text-[#2E282A] shadow-sm transition cursor-pointer"
+                                                className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-white focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition cursor-pointer"
                                             >
-                                                <option value="Full Wedding Planning">Full Wedding Planning</option>
-                                                <option value="Partial Planning">Partial Planning</option>
-                                                <option value="Day-of-Management">Day-of-Management</option>
-                                                <option value="Destination Experience">Destination Experience</option>
-                                                <option value="General Consultation">General Consultation</option>
+                                                <option value="Decoration & Stage Light">Decoration & Stage Light</option>
+                                                <option value="PAR Light & Wash Lights">PAR Light & Wash Lights</option>
+                                                <option value="Silent Generator & Genset Rental">Silent Generator & Genset Rental</option>
+                                                <option value="MI Bar & Pixel LED Tubes">MI Bar & Pixel LED Tubes</option>
+                                                <option value="Kinetic Ball & Matrix Lighting">Kinetic Ball & Matrix Lighting</option>
+                                                <option value="Grand Crystal Chandeliers">Grand Crystal Chandeliers</option>
+                                                <option value="Rise Cloud & Dry Ice Low Fog">Rise Cloud & Dry Ice Low Fog</option>
+                                                <option value="Ambiance & Fort Facade Wash">Ambiance & Fort Facade Wash</option>
+                                                <option value="Complete Production Package">Complete Production Package</option>
                                             </select>
                                         </div>
                                     </div>
 
-                                    {/* ROW 4 (Full width): "TELL US ABOUT YOUR WEDDING VISION" */}
+                                    {/* ROW 4 (Full width): "TELL US ABOUT YOUR EVENT & LIGHTING VISION" */}
                                     <div>
                                         <label className="block text-xs font-semibold tracking-wider uppercase text-[#423E40] mb-1.5">
-                                            TELL US ABOUT YOUR WEDDING VISION
+                                            TELL US ABOUT YOUR EVENT & LIGHTING REQUIREMENTS
                                         </label>
                                         <textarea
                                             rows="4"
@@ -881,9 +881,9 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
                                     <div className="pt-3 flex flex-col sm:flex-row items-center gap-3">
                                         <button
                                             type="submit"
-                                            className="flex-1 w-full py-4 rounded-full bg-[#B07D87] hover:bg-[#9E6772] text-white font-semibold tracking-widest uppercase text-xs shadow-xl btn-luxury flex items-center justify-center gap-2 cursor-pointer"
+                                            className="flex-1 w-full py-4 rounded-full bg-[#E63956] hover:bg-[#CF203E] text-white font-semibold tracking-widest uppercase text-xs shadow-xl flex items-center justify-center gap-2 cursor-pointer transition-all"
                                         >
-                                            <span>Submit Wedding Inquiry</span>
+                                            <span>Book Your Light</span>
                                             <i className="fa-solid fa-arrow-right text-xs"></i>
                                         </button>
                                         <button
@@ -1612,13 +1612,13 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
                         <div className="max-w-7xl mx-auto">
                             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-3 sm:gap-4">
                                 {[
-                                    { img: IMAGES.mosaic1, title: "Bespoke Floral Tablescapes" },
-                                    { img: IMAGES.mosaic2, title: "Tender Ceremony Vows" },
-                                    { img: IMAGES.mosaic3, title: "Alfresco Garden Dining" },
-                                    { img: IMAGES.mosaic4, title: "Couture Wedding Cake" },
-                                    { img: IMAGES.mosaic5, title: "The Magical First Dance" },
-                                    { img: IMAGES.mosaic6, title: "Joyful Bridal Party Moments" },
-                                    { img: IMAGES.mosaic7, title: "Hand-tied Garden Rose Bouquet" },
+                                    { img: IMAGES.mosaic1, title: "Hanging Flora & Birds Chandeliers" },
+                                    { img: IMAGES.mosaic2, title: "Grand Tiered Crystal Chandeliers" },
+                                    { img: IMAGES.mosaic3, title: "Royal Crimson Drape Entrance" },
+                                    { img: IMAGES.mosaic4, title: "Illuminated Flower Lamp Pathway" },
+                                    { img: IMAGES.mosaic5, title: "Grand Floral Arch & Chandeliers" },
+                                    { img: IMAGES.mosaic6, title: "Mirror Pegasus & Chandelier Lawn" },
+                                    { img: IMAGES.mosaic7, title: "Illuminated Leaf Arch Tunnel" },
                                 ].map((item, idx) => (
                                     <div
                                         key={idx}
@@ -1643,137 +1643,111 @@ ${bookingForm.vision || 'No additional notes provided.'}`;
                     {/* --- SECTION 3: BESPOKE SERVICES --- */}
                     {/* ======================================================== */}
                     <section id="services" className="bg-[#FAF6F3] py-24 px-6 md:px-12 lg:px-16 relative">
-                        <div className="max-w-6xl mx-auto text-center">
+                        <div className="max-w-7xl mx-auto text-center">
 
-                            {/* Cursive Subheading */}
-                            <span className="font-script text-3xl sm:text-4xl text-[#B07D87] block mb-1">
-                                Our Services
+                            {/* Section Tag */}
+                            <span className="font-serif text-xs sm:text-sm tracking-[0.25em] uppercase font-bold text-[#E63956] block mb-2">
+                                ✦ Real Event Lighting & Power Equipment ✦
                             </span>
 
                             {/* Main Heading */}
-                            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-charcoal font-medium tracking-tight mb-4">
-                                Bespoke Planning For Your Special Day
+                            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#1A1A1A] font-bold tracking-tight mb-4">
+                                Professional Event Lighting, Trussing & Silent Generators
                             </h2>
 
                             {/* Subtitle */}
-                            <p className="font-sans text-xs sm:text-sm text-charcoal-muted max-w-2xl mx-auto leading-relaxed mb-16 font-light">
-                                We offer comprehensive, step-by-step wedding coordination tailored to suit your needs. From full-scale conceptualization to day-of coordination, we ensure an opulent, tension-free and unforgettable luxury experience.
+                            <p className="font-sans text-xs sm:text-sm text-[#5A5255] max-w-3xl mx-auto leading-relaxed mb-16 font-light">
+                                Suraj Light House delivers complete theatrical lighting infrastructure: LED PAR cans, stage wash lights, MI bars, kinetic balls, crystal chandeliers, rise cloud low fog, and heavy silent DG genset rentals across Ranthambore & Rajasthan.
                             </p>
 
-                            {/* 3 Service Cards */}
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-
-                                {/* Card 01: Full Wedding Planning */}
-                                <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:shadow-2xl transition duration-300 flex flex-col items-center text-center border border-rose-100 group relative">
-
-                                    {/* Number Badge */}
-                                    <div className="w-12 h-12 rounded-full bg-[#B07D87] text-white font-serif text-base font-semibold flex items-center justify-center shadow-md mb-6 group-hover:scale-110 transition">
-                                        01
+                            {/* 8 Service Cards Grid */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                                {[
+                                    {
+                                        num: "01",
+                                        title: "Wisteria Canopy & Neon Arch Lighting",
+                                        img: IMAGES.service1,
+                                        desc: "Cascading white wisteria ceiling drapes, glowing LED neon leaf arches, warm candelabra candle pillars, and ambient warm stage washes.",
+                                        serviceName: "Wisteria & Neon Arch Lighting"
+                                    },
+                                    {
+                                        num: "02",
+                                        title: "Cold Spark Pyros & Dry Ice Low Fog",
+                                        img: IMAGES.service2,
+                                        desc: "Smokeless cold sparkular pyro fountain blasters, heavy low-lying dry ice cloud fog machines, and dramatic spotlighting for couple grand entries.",
+                                        serviceName: "Cold Spark Pyros & Low Fog"
+                                    },
+                                    {
+                                        num: "03",
+                                        title: "Illuminated Varmala Glass Bridge",
+                                        img: IMAGES.service3,
+                                        desc: "Elevated glowing glass runway bridges with under-deck floral beds, warm globe sphere lights, fairy string curtains, and celebratory confetti blast FX.",
+                                        serviceName: "Illuminated Varmala Bridge"
+                                    },
+                                    {
+                                        num: "04",
+                                        title: "Light-Up Glass Floral Runway",
+                                        img: IMAGES.service4,
+                                        desc: "Modular LED backlit tempered glass floor tiles filled with fresh floral beds & micro fairy strings, flanked by illuminated crystal branch trees.",
+                                        serviceName: "Light-up Glass Floral Runway"
+                                    },
+                                    {
+                                        num: "05",
+                                        title: "Residential Fairy Lights & Fabric Drapes",
+                                        img: IMAGES.service5,
+                                        desc: "Full building exterior facade illumination with vertical waterfall fairy light curtains, royal teal satin canopy drapery, and floral gate arches.",
+                                        serviceName: "Residential Facade Lighting"
+                                    },
+                                    {
+                                        num: "06",
+                                        title: "Villa Blue Wash & Waterfall String Lights",
+                                        img: IMAGES.service6,
+                                        desc: "Architectural RGBW wash floodlights in royal blue & purple tones, cascading vertical rice bulb waterfall drops, and decorative lattice wall uplighting.",
+                                        serviceName: "Villa Wash & Waterfall Lighting"
+                                    },
+                                    {
+                                        num: "07",
+                                        title: "Lawn Festoon Canopy & Acoustic Stage",
+                                        img: IMAGES.service7,
+                                        desc: "Criss-cross hanging warm Edison festoon string canopies, illuminated floral arch bandstand, and cozy Baithak lounge garden lighting.",
+                                        serviceName: "Lawn Festoon Canopy & Stage"
+                                    },
+                                    {
+                                        num: "08",
+                                        title: "Aluminum Truss Rigging & Sangeet Stage",
+                                        img: IMAGES.service8,
+                                        desc: "Heavy-duty aluminum box truss framework, gold shimmer backdrop drapes, suspended crystal chandeliers, PAR stage washes, and Shamiyana ceiling lighting.",
+                                        serviceName: "Truss Rigging & Sangeet Stage"
+                                    }
+                                ].map((item) => (
+                                    <div key={item.num} className="bg-white rounded-3xl p-6 shadow-md hover:shadow-2xl transition duration-300 flex flex-col justify-between text-center border border-rose-100/90 group relative">
+                                        <div>
+                                            <div className="w-10 h-10 rounded-full bg-[#E63956] text-white font-serif text-sm font-bold flex items-center justify-center shadow-md mx-auto mb-4 group-hover:scale-110 transition">
+                                                {item.num}
+                                            </div>
+                                            <div className="w-full h-44 rounded-2xl overflow-hidden mb-4 shadow-sm">
+                                                <img
+                                                    src={item.img}
+                                                    alt={item.title}
+                                                    className="w-full h-full object-cover group-hover:scale-108 transition duration-500"
+                                                />
+                                            </div>
+                                            <h3 className="font-serif text-lg sm:text-xl text-[#1A1A1A] font-bold mb-2 leading-snug">
+                                                {item.title}
+                                            </h3>
+                                            <p className="font-sans text-xs text-[#5A5255] leading-relaxed font-light mb-4">
+                                                {item.desc}
+                                            </p>
+                                        </div>
+                                        <button
+                                            onClick={() => openBookingFor(item.serviceName)}
+                                            className="w-full py-2.5 rounded-full bg-[#FAF6F0] hover:bg-[#E63956] text-[#E63956] hover:text-white border border-rose-200 text-xs font-bold uppercase tracking-wider transition cursor-pointer flex items-center justify-center gap-2"
+                                        >
+                                            <span>Book This Setup</span>
+                                            <i className="fa-solid fa-arrow-right text-[10px]"></i>
+                                        </button>
                                     </div>
-
-                                    {/* Image */}
-                                    <div className="w-full h-48 rounded-2xl overflow-hidden mb-6 shadow-sm">
-                                        <img
-                                            src={IMAGES.service1}
-                                            alt="Full Wedding Planning"
-                                            className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                                        />
-                                    </div>
-
-                                    {/* Title */}
-                                    <h3 className="font-serif text-xl sm:text-2xl text-charcoal font-semibold mb-3">
-                                        Full Wedding Planning
-                                    </h3>
-
-                                    {/* Description */}
-                                    <p className="font-sans text-xs text-charcoal-muted leading-relaxed font-light mb-6 flex-1">
-                                        Complete end-to-end management including budget curation, luxury venue selection, custom aesthetic design, vendor procurement, and complete on-site mastery.
-                                    </p>
-
-                                    <button
-                                        onClick={() => openBookingFor('Full Wedding Planning')}
-                                        className="text-xs uppercase tracking-widest font-semibold text-[#B07D87] hover:text-rose-700 flex items-center gap-2 group-hover:gap-3 transition-all"
-                                    >
-                                        <span>Inquire Service</span>
-                                        <i className="fa-solid fa-arrow-right text-[10px]"></i>
-                                    </button>
-
-                                </div>
-
-                                {/* Card 02: Partial Coordination */}
-                                <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:shadow-2xl transition duration-300 flex flex-col items-center text-center border border-rose-100 group relative">
-
-                                    {/* Number Badge */}
-                                    <div className="w-12 h-12 rounded-full bg-[#B07D87] text-white font-serif text-base font-semibold flex items-center justify-center shadow-md mb-6 group-hover:scale-110 transition">
-                                        02
-                                    </div>
-
-                                    {/* Image */}
-                                    <div className="w-full h-48 rounded-2xl overflow-hidden mb-6 shadow-sm">
-                                        <img
-                                            src={IMAGES.service2}
-                                            alt="Partial Coordination"
-                                            className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                                        />
-                                    </div>
-
-                                    {/* Title */}
-                                    <h3 className="font-serif text-xl sm:text-2xl text-charcoal font-semibold mb-3">
-                                        Partial Coordination
-                                    </h3>
-
-                                    {/* Description */}
-                                    <p className="font-sans text-xs text-charcoal-muted leading-relaxed font-light mb-6 flex-1">
-                                        Ideal for couples who have started their planning journey but seek seasoned professional guidance to refine design, finalize vendors, and streamline schedules.
-                                    </p>
-
-                                    <button
-                                        onClick={() => openBookingFor('Partial Coordination')}
-                                        className="text-xs uppercase tracking-widest font-semibold text-[#B07D87] hover:text-rose-700 flex items-center gap-2 group-hover:gap-3 transition-all"
-                                    >
-                                        <span>Inquire Service</span>
-                                        <i className="fa-solid fa-arrow-right text-[10px]"></i>
-                                    </button>
-
-                                </div>
-
-                                {/* Card 03: Day-of Management */}
-                                <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-md hover:shadow-2xl transition duration-300 flex flex-col items-center text-center border border-rose-100 group relative">
-
-                                    {/* Number Badge */}
-                                    <div className="w-12 h-12 rounded-full bg-[#B07D87] text-white font-serif text-base font-semibold flex items-center justify-center shadow-md mb-6 group-hover:scale-110 transition">
-                                        03
-                                    </div>
-
-                                    {/* Image */}
-                                    <div className="w-full h-48 rounded-2xl overflow-hidden mb-6 shadow-sm">
-                                        <img
-                                            src={IMAGES.service3}
-                                            alt="Day-of Management"
-                                            className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
-                                        />
-                                    </div>
-
-                                    {/* Title */}
-                                    <h3 className="font-serif text-xl sm:text-2xl text-charcoal font-semibold mb-3">
-                                        Day-of Management
-                                    </h3>
-
-                                    {/* Description */}
-                                    <p className="font-sans text-xs text-charcoal-muted leading-relaxed font-light mb-6 flex-1">
-                                        Month-of handover to coordinate final logistics, orchestrate rehearsal, direct vendors, and lead seamless execution so you remain stress-free.
-                                    </p>
-
-                                    <button
-                                        onClick={() => openBookingFor('Day-of-Management')}
-                                        className="text-xs uppercase tracking-widest font-semibold text-[#B07D87] hover:text-rose-700 flex items-center gap-2 group-hover:gap-3 transition-all"
-                                    >
-                                        <span>Inquire Service</span>
-                                        <i className="fa-solid fa-arrow-right text-[10px]"></i>
-                                    </button>
-
-                                </div>
-
+                                ))}
                             </div>
 
                             {/* Bottom Centered CTA */}

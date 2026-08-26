@@ -215,7 +215,7 @@ export default function Navbar({ isScrolled, onOpenBooking }) {
                           <i className="fa-solid fa-star text-xs"></i>
                         </div>
                         <div>
-                          <span className="block font-bold">Client Appreciations</span>
+                          <span className="block font-bold">Client Stories</span>
                           <span className="block text-[10px] text-gray-400 font-light">Spectacular reviews & feedback</span>
                         </div>
                       </Link>
@@ -232,7 +232,7 @@ export default function Navbar({ isScrolled, onOpenBooking }) {
                         </div>
                         <div>
                           <span className="block font-bold">Contact & Studio</span>
-                          <span className="block text-[10px] text-gray-400 font-light">Ranthambore office & quotes</span>
+                          <span className="block text-[10px] text-gray-400 font-light">Ranthambore office & booking</span>
                         </div>
                       </Link>
                     </div>
@@ -242,7 +242,7 @@ export default function Navbar({ isScrolled, onOpenBooking }) {
             </AnimatePresence>
           </div>
 
-          {/* 3. Lighting & Decor Dropdown */}
+          {/* 3. Heritage Tenting & Lighting Dropdown */}
           <div 
             className="relative py-1"
             onMouseEnter={handleServicesEnter}
@@ -256,7 +256,7 @@ export default function Navbar({ isScrolled, onOpenBooking }) {
                   : (isSolid ? 'text-[#1A1A1A] hover:text-[#E63956]' : 'text-white/90 hover:text-[#FFCCD3]')
               }`}
             >
-              <span>Lighting & Decor</span>
+              <span>Heritage Tenting</span>
               <motion.i 
                 animate={{ rotate: servicesDropdownOpen ? 180 : 0 }}
                 transition={{ duration: 0.2 }}
@@ -286,8 +286,8 @@ export default function Navbar({ isScrolled, onOpenBooking }) {
                           <i className="fa-solid fa-lightbulb text-xs"></i>
                         </div>
                         <div>
-                          <span className="block font-bold">Full Event Lighting</span>
-                          <span className="block text-[10px] text-gray-400 font-light">Chandeliers, fairy canopies & wash</span>
+                          <span className="block font-bold">Grand Lighting & Tenting</span>
+                          <span className="block text-[10px] text-gray-400 font-light">Chandeliers, fairy canopies & hangars</span>
                         </div>
                       </a>
 
@@ -432,7 +432,7 @@ export default function Navbar({ isScrolled, onOpenBooking }) {
                   : (isSolid ? 'text-[#1A1A1A] hover:text-[#E63956]' : 'text-white/90 hover:text-[#FFCCD3]')
               }`}
             >
-              <span>Venues</span>
+              <span>Palace Venues</span>
               <motion.i 
                 animate={{ rotate: venueDropdownOpen ? 180 : 0 }}
                 transition={{ duration: 0.2 }}
@@ -475,7 +475,7 @@ export default function Navbar({ isScrolled, onOpenBooking }) {
             </AnimatePresence>
           </div>
 
-          {/* 6. Our Grand Setups */}
+          {/* 6. Grand Setups */}
           <Link 
             to="/real-weddings" 
             className={`px-2 py-1.5 hover:text-[#E63956] transition-colors relative ${
@@ -484,7 +484,7 @@ export default function Navbar({ isScrolled, onOpenBooking }) {
                 : (isSolid ? 'text-[#1A1A1A]' : 'text-white/90')
             }`}
           >
-            Our Setups
+            Grand Setups
           </Link>
 
           {/* 7. Gallery */}
@@ -501,13 +501,13 @@ export default function Navbar({ isScrolled, onOpenBooking }) {
 
         </nav>
 
-        {/* Far Right CTA: GET A QUOTE (Desktop) */}
+        {/* Far Right CTA: BOOK YOUR LIGHT (Desktop) */}
         <div className="hidden xl:flex items-center flex-shrink-0">
           <button
             onClick={() => onOpenBooking('Full Event Lighting')}
             className="px-5 py-2.5 rounded-full bg-[#E63956] hover:bg-[#CF203E] text-white text-[11px] font-bold tracking-widest uppercase transition transform hover:scale-[1.03] shadow-md hover:shadow-lg flex items-center justify-center cursor-pointer border border-white/20"
           >
-            GET A QUOTE
+            BOOK YOUR LIGHT
           </button>
         </div>
 

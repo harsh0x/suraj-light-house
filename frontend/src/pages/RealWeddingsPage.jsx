@@ -18,7 +18,7 @@ const weddingsList = [
     names: 'Vikramaditya & Ananya',
     category: 'ranthambore',
     venue: 'Nahargarh Palace, Ranthambore',
-    bannerImg: 'https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=1200&q=85',
+    bannerImg: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=85',
     thought: 'The royal family envisioned an ethereal palace lighting production. Suraj Light House deployed 40+ imported crystal chandeliers across the main courtyard, warm amber floodlights across the historical ramparts, and a multi-tiered aluminum stage truss for live headline artists.',
     specialNote: 'Executed with 100% silent diesel generator redundancy, ensuring uninterrupted festivities for over 1,200 guests.',
     makers: [
@@ -38,7 +38,7 @@ const weddingsList = [
     names: 'Siddharth & Priya',
     category: 'ranthambore',
     venue: 'Six Senses Fort Barwara, Sawai Madhopur',
-    bannerImg: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1200&q=85',
+    bannerImg: 'https://images.unsplash.com/photo-photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1200&q=85',
     thought: 'A high-profile celebrity heritage wedding set inside a 14th-century royal fort. Suraj Light House engineered custom architectural uplighting, waterproof shamiyana dining pavilions, and computerized DMX lighting sequences synchronized with live musical acts.',
     specialNote: 'Complete cable management hidden behind heritage stone contours without a single nail touching the ancient fort walls.',
     makers: [
@@ -57,7 +57,7 @@ const weddingsList = [
     names: 'Karan & Meera',
     category: 'jaipur',
     venue: 'Fairmont Jaipur, Kukas',
-    bannerImg: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85',
+    bannerImg: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=85',
     thought: 'A massive Pink City celebration requiring heavy aluminum box trussing over the grand central amphitheatre, hydraulic stage lifting, and extensive facade wash.',
     specialNote: 'Custom vintage Edison bulb arrays suspended across 15,000 sq.ft of banquet lawn.',
     makers: [

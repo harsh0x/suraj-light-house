@@ -63,7 +63,10 @@ export default function HomePage({
       />
 
       {/* SECTION 7: Ranthambore & Rajasthan Royal Heritage Venues */}
-      <RanthamboreHeritageSection />
+      <RanthamboreHeritageSection 
+        onOpenBooking={onOpenBooking} 
+        onImageClick={onImageClick} 
+      />
 
       {/* SECTION 8: Technical & Logistics FAQ */}
       <LightingFaq onImageClick={onImageClick} />

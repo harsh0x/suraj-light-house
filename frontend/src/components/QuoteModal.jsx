@@ -119,7 +119,7 @@ export default function QuoteModal({ isOpen, onClose, initialService = 'Full Eve
                 Request an Event Lighting Quote
               </h3>
               <p className="text-xs sm:text-sm text-[#5A5255] mt-2 max-w-lg mx-auto font-light leading-relaxed">
-                Connect directly with our master lighting planners and electrical engineers for your celebration in Ranthambore & Rajasthan.
+                Connect directly with our master lighting designers and electrical engineers for your celebration in Ranthambore & Rajasthan.
               </p>
             </div>
 

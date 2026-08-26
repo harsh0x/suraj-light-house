@@ -6,7 +6,7 @@ const LUXURY_EASE = [0.25, 1, 0.5, 1];
 
 const roster = [
   {
-    image: 'https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80',
     tag: 'Red Carpet & Stages',
     icon: 'fa-solid fa-film',
     title: 'Celebrity Stage & Trussing',
@@ -14,7 +14,7 @@ const roster = [
     highlight: 'Box Truss & Rigging'
   },
   {
-    image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80',
     tag: 'Concert Experience',
     icon: 'fa-solid fa-microphone',
     title: 'Live Band & Vocalist Lighting',
@@ -22,7 +22,7 @@ const roster = [
     highlight: 'DMX Spot & Beams'
   },
   {
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
     tag: 'EDM & Laser Cues',
     icon: 'fa-solid fa-compact-disc',
     title: 'DJ Truss & Moving Heads',
@@ -38,7 +38,7 @@ const roster = [
     highlight: 'Heritage Gold Wash'
   },
   {
-    image: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80',
     tag: 'Special FX',
     icon: 'fa-solid fa-wand-magic-sparkles',
     title: 'Cold Pyros, Fog & Confetti',
@@ -46,7 +46,7 @@ const roster = [
     highlight: 'Cold Pyros & FX'
   },
   {
-    image: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80',
     tag: 'Dedicated Power',
     icon: 'fa-solid fa-shield-halved',
     title: 'Rider Technical Compliance',
@@ -56,23 +56,23 @@ const roster = [
 ];
 
 const galleryImages = [
-  { url: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80', title: 'Concert Stage Trussing' },
-  { url: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80', title: 'Playback Singer Spotlight' },
-  { url: 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80', title: 'Royal Folk Illumination' },
-  { url: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80', title: 'Cold Sparkler Pyro FX' }
+  { url: 'https://images.unsplash.com/photo-photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80', title: 'Concert Stage Trussing' },
+  { url: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=800&q=80', title: 'Playback Singer Spotlight' },
+  { url: 'https://images.unsplash.com/photo-photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80', title: 'Royal Folk Illumination' },
+  { url: 'https://images.unsplash.com/photo-photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80', title: 'Cold Sparkler Pyro FX' }
 ];
 
 const CELEBRITY_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=2000&q=85',
+    image: 'https://images.unsplash.com/photo-photo-1587474260584-136574528ed5?auto=format&fit=crop&w=2000&q=85',
     sub: '✦ Concert Grade Stagecraft ✦',
     title: 'Stage Trussing & Special FX Production',
     desc: 'Suraj Light House delivers heavy aluminum box trussing, sharpie moving head beams, lasers, and cold pyros for top-tier artist performances and grand celebrations across Rajasthan.'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=2000&q=85',
+    image: 'https://images.unsplash.com/photo-photo-1590059390046-5544719b0270?auto=format&fit=crop&w=2000&q=85',
     sub: '✦ High-Octane After-Parties ✦',
     title: 'Electrifying Sangeet Light Shows',
     desc: 'Computerized intelligent DMX consoles, moving heads, cryogenic fog, and concert-grade acoustics designed to keep your audience enthralled until sunrise.'

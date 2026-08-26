@@ -6,8 +6,8 @@ const instagramPosts = [
     id: 1,
     col: 'left',
     type: 'video',
-    src: '/assets/videos/rajasthan_chari_dance.webm',
-    poster: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80',
+    src: '/assets/videos/insta_reel_1.mp4',
+    poster: 'https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=800&q=80',
     likes: '8.4k',
     comments: '412',
     caption: 'Mesmerizing Rajasthani folk artists welcoming baraat guests with the royal Chari fire dance ✨🔥🏰 #RajasthaniWedding #SurajLightHouse'
@@ -16,8 +16,8 @@ const instagramPosts = [
     id: 2,
     col: 'center-top',
     type: 'video',
-    src: '/assets/videos/rajasthan_folk_dance.webm',
-    poster: 'https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=800&q=80',
+    src: '/assets/videos/insta_reel_2.mp4',
+    poster: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80',
     likes: '9.8k',
     comments: '643',
     caption: 'Traditional royal folk beats & spirited wedding performances lighting up the sangeet night 👑🌸 #RoyalHeritage #SurajLightHouse'
@@ -26,8 +26,8 @@ const instagramPosts = [
     id: 3,
     col: 'center-bottom',
     type: 'video',
-    src: '/assets/videos/hd_wedding_mehendi.webm',
-    poster: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80',
+    src: '/assets/videos/insta_reel_3.mp4',
+    poster: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80',
     likes: '11.5k',
     comments: '893',
     caption: 'Joyful celebrations, authentic mehendi rituals & colorful royal wedding vibes 🏰💫 #RanthamboreWeddings #SurajLightHouse'
@@ -36,8 +36,8 @@ const instagramPosts = [
     id: 4,
     col: 'right-top',
     type: 'video',
-    src: '/assets/videos/rajasthan_ghoomar_palace.webm',
-    poster: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80',
+    src: '/assets/videos/insta_reel_4.mp4',
+    poster: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80',
     likes: '14.8k',
     comments: '1.2k',
     caption: 'Majestic palace court illuminations & royal wedding celebrations under starry skies ✨🦚 #RoyalRajasthani #WeddingLighting'
@@ -46,8 +46,8 @@ const instagramPosts = [
     id: 5,
     col: 'right-bottom',
     type: 'video',
-    src: '/assets/videos/hd_royal_stage_celebration.webm',
-    poster: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80',
+    src: '/assets/videos/insta_reel_5.mp4',
+    poster: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=800&q=80',
     likes: '15.6k',
     comments: '924',
     caption: 'Grand royal sangeet stage, festive dhol & vibrant celebrations lighting up the night 🌸✨ #SurajLightHouse #BespokeWeddings'
@@ -67,7 +67,7 @@ function VideoReelCard({ post, index, ease }) {
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.8, delay: index * 0.1, ease }}
-      className="group relative aspect-square rounded-2xl overflow-hidden shadow-md hover:shadow-2xl border border-rose-100/80 bg-rose-50/50 block cursor-pointer select-none"
+      className="group relative aspect-square rounded-2xl overflow-hidden shadow-md hover:shadow-2xl border border-rose-100/80 bg-black block cursor-pointer select-none"
     >
       {!videoFailed ? (
         <video 
@@ -79,8 +79,14 @@ function VideoReelCard({ post, index, ease }) {
           playsInline
           webkit-playsinline="true"
           preload="auto"
+          onTimeUpdate={(e) => {
+            // Smoothly loops the 15-second clip
+            if (e.target.currentTime >= 15) {
+              e.target.currentTime = 0;
+            }
+          }}
           onError={() => setVideoFailed(true)}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
       ) : (
         <img 

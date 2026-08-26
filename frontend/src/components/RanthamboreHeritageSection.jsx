@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { IMAGES } from '../data/lightingData';
 
-export default function RanthamboreHeritageSection() {
+export default function RanthamboreHeritageSection({ onOpenBooking, onImageClick }) {
   return (
     <section className="relative bg-[#1A1A1A] text-white py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
       
@@ -33,12 +33,12 @@ export default function RanthamboreHeritageSection() {
               As Ranthambore’s foremost event lighting, shamiyana tenting, and truss production house, we bring unmatched local mastery to heritage forts, wildlife luxury resorts, and royal palace venues across Sawai Madhopur, Ranthambore, and greater Rajasthan.
             </p>
             <div>
-              <a 
-                href="#contact"
-                className="inline-block px-8 py-3.5 rounded-full bg-[#E63956] hover:bg-[#CF203E] text-white text-xs font-bold tracking-wider uppercase shadow-lg transition transform hover:-translate-y-0.5"
+              <button 
+                onClick={() => onOpenBooking ? onOpenBooking('Heritage Venue Lighting') : null}
+                className="inline-block px-8 py-3.5 rounded-full bg-[#E63956] hover:bg-[#CF203E] text-white text-xs font-bold tracking-wider uppercase shadow-lg transition transform hover:-translate-y-0.5 cursor-pointer"
               >
                 Light Up Your Event
-              </a>
+              </button>
             </div>
           </motion.div>
 
@@ -60,12 +60,13 @@ export default function RanthamboreHeritageSection() {
             {/* Ranthambore Luxury Resorts */}
             <motion.div 
               variants={{ hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0, transition: { duration: 0.7 } } }}
-              className="bg-[#242022] rounded-2xl overflow-hidden border border-white/10 shadow-xl group"
+              className="bg-[#242022] rounded-2xl overflow-hidden border border-white/10 shadow-xl group cursor-pointer"
+              onClick={() => onImageClick && onImageClick({ url: IMAGES.destMiami, title: "Royal Floral Mandap & Crystal Chandeliers" })}
             >
               <div className="h-44 overflow-hidden relative">
                 <img 
                   src={IMAGES.destMiami} 
-                  alt="Ranthambore Luxury Resorts" 
+                  alt="Royal Floral Mandap & Crystal Chandeliers" 
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500" 
                 />
               </div>
@@ -80,12 +81,13 @@ export default function RanthamboreHeritageSection() {
             {/* Sawai Madhopur Palaces */}
             <motion.div 
               variants={{ hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0, transition: { duration: 0.7 } } }}
-              className="bg-[#242022] rounded-2xl overflow-hidden border border-white/10 shadow-xl group"
+              className="bg-[#242022] rounded-2xl overflow-hidden border border-white/10 shadow-xl group cursor-pointer"
+              onClick={() => onImageClick && onImageClick({ url: IMAGES.destPalmBeach, title: "Purple Floral Ceiling & Neon Chandelier" })}
             >
               <div className="h-44 overflow-hidden relative">
                 <img 
                   src={IMAGES.destPalmBeach} 
-                  alt="Sawai Madhopur Palaces" 
+                  alt="Purple Floral Ceiling & Neon Chandelier" 
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500" 
                 />
               </div>
@@ -100,12 +102,13 @@ export default function RanthamboreHeritageSection() {
             {/* Rajasthan Royal Venues */}
             <motion.div 
               variants={{ hidden: { opacity: 0, y: 30 }, show: { opacity: 1, y: 0, transition: { duration: 0.7 } } }}
-              className="bg-[#242022] rounded-2xl overflow-hidden border border-white/10 shadow-xl group"
+              className="bg-[#242022] rounded-2xl overflow-hidden border border-white/10 shadow-xl group cursor-pointer"
+              onClick={() => onImageClick && onImageClick({ url: IMAGES.destNaples, title: "Crimson Velvet & Geometric Floral Backdrop" })}
             >
               <div className="h-44 overflow-hidden relative">
                 <img 
                   src={IMAGES.destNaples} 
-                  alt="Rajasthan Destination Setups" 
+                  alt="Crimson Velvet & Geometric Floral Backdrop" 
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500" 
                 />
               </div>

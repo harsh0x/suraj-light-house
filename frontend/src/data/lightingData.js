@@ -1,122 +1,128 @@
-// Curated High-Definition Imagery for Suraj Light's Ranthambore
+// Curated High-Definition Imagery for Suraj Light's Ranthambore (100% Real Event Lighting & Equipment)
 export const IMAGES = {
-  heroBg: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85",
-  aboutLeftBack: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
-  aboutLeftFront: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=800&q=80",
-  aboutRightBack: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80",
-  aboutRightFront: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80",
+  // Hero Background: Real Indian Event Stage & Mandap Lighting with Flower Wall & PAR Wash
+  heroBg: "/assets/hero-facade-lighting.jpg",
+  aboutLeftBack: "/assets/about-blue-cabana.jpg", // Blue Cabana Fairy Lights & Outdoor Dining
+  aboutLeftFront: "/assets/about-gold-chandelier.jpg", // Gold Sequin Table & Grand Crystal Chandeliers
+  aboutRightBack: "/assets/about-neon-tunnel.jpg", // Electric Blue Neon Geometric Tunnel & Cloud Ceiling
+  aboutRightFront: "/assets/about-emerald-chandelier.jpg", // Emerald Velvet Drapes & Undulating Neon Chandeliers
   
-  // Mosaic band images (Grand Lighting & Decor Moments)
-  mosaic1: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80",
-  mosaic2: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=80",
-  mosaic3: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-  mosaic4: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80",
-  mosaic5: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=600&q=80",
-  mosaic6: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=600&q=80",
-  mosaic7: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80",
+  // Mosaic band images (Real Event Lighting & Equipment Work)
+  mosaic1: "/assets/mosaic-hanging-flora-chandelier.jpg", // Hanging Flora & Bird Chandeliers
+  mosaic2: "/assets/mosaic-grand-tier-chandelier.jpg", // Grand Tiered Crystal Chandeliers
+  mosaic3: "/assets/mosaic-red-drape-entrance.jpg", // Royal Crimson Drape Entrance
+  mosaic4: "/assets/mosaic-illuminated-flower-walkway.jpg", // Illuminated Flower Lamp Pathway
+  mosaic5: "/assets/mosaic-floral-arch-chandeliers.jpg", // Grand Floral Arches & Chandeliers
+  mosaic6: "/assets/mosaic-mirror-pegasus-chandeliers.jpg", // Mirror Horse Sculpture & Chandeliers
+  mosaic7: "/assets/mosaic-illuminated-arch-tunnel.jpg", // Illuminated Leaf Archway Tunnel
 
-  // Services Cards
-  service1: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80", // Royal Heritage Tenting
-  service2: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=800&q=80", // Premium Event Lighting & Chandeliers
-  service3: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80", // Stage & Truss Architecture
+  // Core Equipment Services Cards
+  service1: "/assets/service-hanging-wisteria-arches.jpg", // White Wisteria, Neon Arches & Candelabras
+  service2: "/assets/service-cold-pyro-fog-aisle.jpg", // Cold Spark Pyros & Low Cloud Fog Walkway
+  service3: "/assets/service-varmala-flower-bridge.jpg", // Illuminated Varmala Flower Bridge & Confetti
+  service4: "/assets/service-glass-floral-aisle.jpg", // Illuminated Glass Floral Runway & Trees
+  service5: "/assets/service-house-teal-fairy-drapes.jpg", // Villa Facade Teal Drapes & String Lights
+  service6: "/assets/service-house-blue-purple-uplight.jpg", // Luxury House Blue Accent & Waterfall Lights
+  service7: "/assets/service-lawn-musical-festoon.jpg", // Lawn Musical Stage & Warm Festoon Lights
+  service8: "/assets/service-sangeet-truss-gold-stage.jpg", // Sangeet Qawwali Truss Stage & Canopy
 
-  // Portfolio Carousel (Grand Setups)
-  portfolio1: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=85",
-  portfolio2: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=1200&q=85",
-  portfolio3: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1200&q=85",
-  portfolio4: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1200&q=85",
+  // Portfolio Carousel (Grand Setups & Stagecraft)
+  portfolio1: "/assets/portfolio-dj-dance-sangeet.jpg", // DJ Concert Sangeet Truss Setup
+  portfolio2: "/assets/portfolio-outdoor-mandap-mixer.jpg", // Theatrical Mandap Sound & Light Mixer
+  portfolio3: "/assets/portfolio-bougainvillea-arch-swing.jpg", // Bougainvillea Floral Arch & Edison Bulbs
+  portfolio4: "/assets/portfolio-royal-red-rose-palace-stage.jpg", // Royal Crimson Rose & Chandelier Pavilion
 
   // Commitment Section
-  commit1: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80",
-  commit2: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=80",
-  commit3: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=600&q=80",
+  commit1: "/assets/commitment-canopy-chandelier.jpg", // Radiating Drapes & Canopy Fairy Lights
+  commit2: "/assets/commitment-tree-lanterns.jpg", // Moonlight Tree Hanging Paper & Woven Lanterns
+  commit3: "/assets/commitment-bistro-festoon.jpg", // Warm Bistro Festoon Fairy Lights Canopy
 
-  // Why Choose Us Circular images (Heritage Tenting, Premium Lighting, Royal Event Decor)
-  why1: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=600&q=80", // Heritage Tenting
-  why2: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=600&q=80", // Premium Lighting
-  why3: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=600&q=80", // Royal Event Decor
+  // Why Choose Us Feature Cards (Bespoke Lighting, Royal Tenting, Flawless Execution)
+  why1: "/assets/standard-bespoke-banquet.jpg", // Grand Banquet Hall Chandeliers & Floral Ceiling
+  why2: "/assets/standard-royal-tenting.jpg", // Scalloped Pink Tenting Canopy & Drop Lanterns
+  why3: "/assets/standard-flawless-walkway.jpg", // Fairy Light Walkway Tunnel & Overhead Crystal Chandeliers
   
-  // Floating Bubbles
+  // Floating Bubbles (11 Distinct Circular Equipment Icons with Unique Local Assets)
   whyBubbles: [
-    { id: 1, title: "Grand Shamiyana Canopies", url: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=300&q=80", pos: "top-4 left-4 sm:left-8", size: "w-16 h-16 sm:w-20 sm:h-20", delay: 0.1, floatDuration: 4.2, floatY: -12, floatX: 4 },
-    { id: 2, title: "Crystal Chandelier Rows", url: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=300&q=80", pos: "top-6 left-28 sm:left-40", size: "w-12 h-12 sm:w-16 sm:h-16", delay: 0.2, floatDuration: 5.0, floatY: 10, floatX: -5 },
-    { id: 3, title: "Fairy Light Tunnel Canopies", url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=300&q=80", pos: "top-24 left-16 sm:left-24", size: "w-14 h-14 sm:w-18 sm:h-18", delay: 0.3, floatDuration: 4.6, floatY: -10, floatX: 6 },
-    { id: 4, title: "Stage Truss & Beams", url: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=300&q=80", pos: "top-44 left-3 sm:left-7", size: "w-11 h-11 sm:w-14 sm:h-14", delay: 0.4, floatDuration: 3.8, floatY: 8, floatX: -4 },
-    { id: 5, title: "Palace Facade Uplighting", url: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=300&q=80", pos: "top-64 left-10 sm:left-16", size: "w-10 h-10 sm:w-12 sm:h-12", delay: 0.5, floatDuration: 4.8, floatY: -8, floatX: 5 },
-    { id: 6, title: "Ambient Warm Lanterns", url: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=300&q=80", pos: "top-80 left-2 sm:left-6", size: "w-12 h-12 sm:w-15 sm:h-15", delay: 0.6, floatDuration: 4.0, floatY: 10, floatX: -6 },
-    { id: 7, title: "Opulent Banquet Illumination", url: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=300&q=80", pos: "top-8 right-32 sm:right-48", size: "w-12 h-12 sm:w-16 sm:h-16", delay: 0.25, floatDuration: 5.2, floatY: -10, floatX: -4 },
-    { id: 8, title: "Royal Rajasthani Mandap", url: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=300&q=80", pos: "top-3 right-6 sm:right-12", size: "w-16 h-16 sm:w-20 sm:h-20", delay: 0.15, floatDuration: 4.4, floatY: 12, floatX: 5 },
-    { id: 9, title: "Courtyard Festoon Strings", url: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=300&q=80", pos: "top-32 right-3 sm:right-6", size: "w-16 h-16 sm:w-20 sm:h-20", delay: 0.35, floatDuration: 4.9, floatY: -12, floatX: -5 },
-    { id: 10, title: "Laser & Pyrotechnic FX", url: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=300&q=80", pos: "top-52 right-20 sm:right-28", size: "w-12 h-12 sm:w-15 sm:h-15", delay: 0.45, floatDuration: 4.1, floatY: 9, floatX: 4 },
-    { id: 11, title: "Lakeside Royal Pavilions", url: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=300&q=80", pos: "top-72 right-4 sm:right-8", size: "w-14 h-14 sm:w-18 sm:h-18", delay: 0.55, floatDuration: 4.5, floatY: -11, floatX: -4 }
+    { id: 1, title: "Tiered Floral Chandeliers", url: "/assets/bubble-floral-wisteria-chandelier.jpg", pos: "top-6 left-3 sm:left-6 md:left-8", size: "w-16 h-16 sm:w-20 sm:h-20 lg:w-22 lg:h-22", delay: 0.1, floatDuration: 4.2, floatY: -12, floatX: 4 },
+    { id: 2, title: "Modern Halo Ring Chandeliers", url: "/assets/bubble-halo-ring-chandeliers.jpg", pos: "top-10 left-24 sm:left-32 md:left-40 lg:left-48", size: "w-14 h-14 sm:w-16 sm:h-16 lg:w-18 lg:h-18", delay: 0.2, floatDuration: 5.0, floatY: 10, floatX: -5 },
+    { id: 3, title: "Cold Spark Pyros & Low Fog", url: "/assets/service-cold-pyro-fog-aisle.jpg", pos: "top-36 left-8 sm:left-14 md:left-20 lg:left-24", size: "w-14 h-14 sm:w-18 sm:h-18 lg:w-20 lg:h-20", delay: 0.3, floatDuration: 4.6, floatY: -10, floatX: 6 },
+    { id: 4, title: "Royal Crystal Chandeliers", url: "/assets/about-gold-chandelier.jpg", pos: "top-60 left-2 sm:left-6 md:left-8 lg:left-12", size: "w-12 h-12 sm:w-15 sm:h-15 lg:w-16 lg:h-16", delay: 0.4, floatDuration: 3.8, floatY: 8, floatX: -4 },
+    { id: 5, title: "Mirror Sculptures & Lights", url: "/assets/mosaic-mirror-pegasus-chandeliers.jpg", pos: "top-80 left-16 sm:left-24 md:left-32 lg:left-36", size: "w-11 h-11 sm:w-14 sm:h-14 lg:w-16 lg:h-16", delay: 0.5, floatDuration: 4.8, floatY: -8, floatX: 5 },
+    { id: 6, title: "Teal Drapes & String Illumination", url: "/assets/service-house-teal-fairy-drapes.jpg", pos: "bottom-8 left-4 sm:left-8 md:left-12 lg:left-16", size: "w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20", delay: 0.6, floatDuration: 4.0, floatY: 10, floatX: -6 },
+    { id: 7, title: "Hanging Wisteria & Fairy Drops", url: "/assets/bubble-hanging-wisteria-fairylights.jpg", pos: "top-10 right-24 sm:right-32 md:right-40 lg:right-48", size: "w-14 h-14 sm:w-16 sm:h-16 lg:w-18 lg:h-18", delay: 0.25, floatDuration: 5.2, floatY: -10, floatX: -4 },
+    { id: 8, title: "Curtain Fairy Lights Facade", url: "/assets/bubble-curtain-lights-courtyard.jpg", pos: "top-4 right-3 sm:right-6 md:right-8 lg:right-10", size: "w-16 h-16 sm:w-20 sm:h-20 lg:w-22 lg:h-22", delay: 0.15, floatDuration: 4.4, floatY: 12, floatX: 5 },
+    { id: 9, title: "Emerald Drapes & Neon Ambience", url: "/assets/about-emerald-chandelier.jpg", pos: "top-36 right-4 sm:right-8 md:right-12 lg:right-16", size: "w-14 h-14 sm:w-18 sm:h-18 lg:w-20 lg:h-20", delay: 0.35, floatDuration: 4.9, floatY: -12, floatX: -5 },
+    { id: 10, title: "Illuminated Varmala Flower Bridge", url: "/assets/service-varmala-flower-bridge.jpg", pos: "top-64 right-16 sm:right-24 md:right-32 lg:right-36", size: "w-12 h-12 sm:w-15 sm:h-15 lg:w-16 lg:h-16", delay: 0.45, floatDuration: 4.1, floatY: 9, floatX: 4 },
+    { id: 11, title: "Bougainvillea Arch & Edison Bulbs", url: "/assets/portfolio-bougainvillea-arch-swing.jpg", pos: "bottom-10 right-4 sm:right-8 md:right-12 lg:right-16", size: "w-14 h-14 sm:w-18 sm:h-18 lg:w-20 lg:h-20", delay: 0.55, floatDuration: 4.5, floatY: -11, floatX: -4 }
   ],
 
   // Ranthambore & Rajasthan Royal Heritage Venues
-  destSouthBg: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1600&q=80",
-  destMiami: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=600&q=80", // Ranthambore Fort & Palaces
-  destPalmBeach: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=600&q=80", // Nahargarh & Six Senses
-  destNaples: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=600&q=80", // Luxury Wildlife Resorts
+  destSouthBg: "/assets/hero-facade-lighting.jpg",
+  destMiami: "/assets/heritage-ranthambore-resorts.jpg", // Ranthambore Fort & Palaces
+  destPalmBeach: "/assets/heritage-sawai-madhopur.jpg", // Nahargarh & Six Senses
+  destNaples: "/assets/heritage-rajasthan-palaces.jpg", // Luxury Wildlife Resorts
 
   // FAQ Flanking Photos
-  faqLeftTop: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80",
-  faqLeftBottom: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80",
-  faqRight: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=600&q=80",
+  faqLeftTop: "/assets/faq-shadi-house-entrance.jpg", // House Entrance Fairy Lights & Traditional Signage
+  faqLeftBottom: "/assets/faq-street-facade-drapes.jpg", // Street Facade Drapes & Waterfall Lights
+  faqRight: "/assets/faq-rooftop-fairylight-canopy.jpg", // Rooftop & Terrace Fairy Light Mesh Canopy & Sangeet Setup
 };
 
 export const INITIAL_PORTFOLIO = [
   {
     id: 1,
-    title: "Nahargarh Palace Chandelier Gala",
-    category: "Full Event Lighting & Tenting",
-    location: "Ranthambore, Rajasthan",
+    title: "High-Energy Sangeet & Live DJ Concert Production",
+    category: "Concert Truss & Sangeet Dance Floor",
+    location: "Nahargarh Fort, Ranthambore",
     image: IMAGES.portfolio1,
-    desc: "A breathtaking royal canopy featuring over 40 bespoke crystal chandeliers, perimeter warm architectural wash, and fairy light tunnels."
+    desc: "Full aluminum box truss concert rigging, sharpie beam moving heads, geometric pattern dance floor, and high-wattage live DJ sound & light synchronization."
   },
   {
     id: 2,
-    title: "Six Senses Fort Barwara Sangeet Illumination",
-    category: "Stage Trussing & Special FX",
-    location: "Sawai Madhopur, Rajasthan",
+    title: "Grand Royal Wedding Mandap & Live Audio Control",
+    category: "Theatrical Mandap & Sound Engineering",
+    location: "The Oberoi Vanyavilas, Ranthambore",
     image: IMAGES.portfolio2,
-    desc: "Grand concert-grade aluminum trussing with beam sharpies, cold pyros, synchronized pixel tubes, and custom stage design."
+    desc: "Dynamic RGBW mandap stage wash lighting, ambient landscape floodlights, multi-channel sound mixing console, and ceremonial lighting control."
   },
   {
     id: 3,
-    title: "Oberoi Vanyavilas Heritage Shamiyana",
-    category: "Heritage Tenting & Royal Decor",
-    location: "Ranthambore, Rajasthan",
+    title: "Regal Bougainvillea Archway & Warm Edison Canopy",
+    category: "Heritage Floral Arch & Edison Bulbs",
+    location: "Six Senses Fort Barwara",
     image: IMAGES.portfolio3,
-    desc: "Opulent hand-stitched Rajasthani shamiyana canopies, ambient brass lantern pathways, and warm candlelit floral mandap."
+    desc: "Intricate carved heritage palace arches festooned with fresh bougainvillea cascades, vintage warm pendant Edison bulbs, and golden uplighting fixtures."
   },
   {
     id: 4,
-    title: "Sawai Vilas Starry Night Reception",
-    category: "Architectural & Ambient Lighting",
-    location: "Sawai Madhopur, Rajasthan",
+    title: "Grand Crimson Velvet Stage & Crystal Chandelier Pavilion",
+    category: "Royal Crimson Rose & Crystal Chandeliers",
+    location: "Sawai Madhopur Palace, Rajasthan",
     image: IMAGES.portfolio4,
-    desc: "Intimate, ethereal courtyard celebration illuminated with 10,000+ warm fairy lights, vintage Edison globes, and custom gobo projections."
+    desc: "Extravagant red rose architectural archways, gilded cage columns, suspended multi-tier crystal chandeliers, and opulent velvet red carpet stage production."
   }
 ];
 
 export const FAQS = [
   {
-    q: "What lighting & tenting setup does Suraj Light House provide on the event day?",
-    a: "Our master crew and electrical engineers arrive 12 to 24 hours prior to your event start time. We install heavy-duty aluminum trussing, rig imported crystal chandeliers, run dedicated sound-attenuated silent generators with 100% redundancy, and program intelligent DMX light shows with on-site technician monitoring throughout your celebration."
+    q: "What lighting & sound equipment does Suraj Light House supply?",
+    a: "We supply the complete professional event lighting inventory: LED PAR 64 / PAR Cans, Stage Wash Lights, Sharpy Moving Head Beams, MI Bars & Pixel LED Tubes, Motorized Kinetic Light Balls, Imported Multi-Tier Crystal Chandeliers, Rise Cloud Dry Ice Low Fog Machines, Sparkular Cold Pyros, and Soundproof Commercial Silent Diesel Generators (DG Gensets)."
   },
   {
-    q: "How early should we book Suraj Light's Ranthambore for our wedding or event?",
-    a: "For destination weddings in peak season (October to March) at Ranthambore resorts, we strongly recommend reserving your date 4 to 8 months in advance. However, we also cater to expedited corporate summits and grand private celebrations based on current inventory availability."
+    q: "Do you offer heavy Silent Generator (DG Genset) rental with on-site backup?",
+    a: "Yes! Every single setup by Suraj Light House includes commercial-grade sound-attenuated silent diesel generators, 3-phase heavy armored power distribution boxes, and standby redundancy so your entire stage, chandeliers, air conditioning, and sound never experience power interruption."
   },
   {
-    q: "Do you supply heavy-duty power generators and electrical backups?",
-    a: "Yes! Every single setup by Suraj Light House includes commercial-grade silent diesel generators, distribution panels, armored cabling, and complete backup lines so your music, stage lighting, and decor never suffer a momentary flicker."
+    q: "Can you provide MI Bar, Pixel Tubes, and Kinetic Ball Lighting for musical sangeets?",
+    a: "Yes. We own state-of-the-art DMX computerized pixel tubes, moving MI bars, and motorized kinetic ball matrices that create mesmerizing wave animations synchronized with live musical rhythms and celebrity DJ sets."
   },
   {
-    q: "Can you provide setups for destination venues across Rajasthan and India?",
-    a: "Absolutely! While Ranthambore and Sawai Madhopur are our heartland, our specialized transport fleet and lighting crews regularly execute grand setups in Jaipur, Udaipur, Jodhpur, Pushkar, and destination resorts across India."
+    q: "Do you install grand crystal chandeliers and royal shamiyanas in open grounds?",
+    a: "Yes. We specialize in structural aluminum trussing capable of suspending 40+ grand crystal chandeliers, alongside waterproof German hangars, royal Rajasthani shamiyanas, and illuminated floral peacock entrance archways across Ranthambore and Rajasthan."
   },
   {
-    q: "Can you customize lighting themes to match our wedding color palette?",
-    a: "Definitely. From royal Rajputana amber gold to ethereal romantic blush, cool midnight blue, or high-energy dynamic RGB concert beams, our digital DMX consoles allow customized color themes perfectly synchronized with your decor and timeline."
+    q: "Can you customize par lighting themes for palace and fort venues?",
+    a: "Absolutely. Using programmable DMX consoles, our lighting engineers customize exact color palettes—from royal amber gold and warm candlelight washes to high-energy concert beams and architectural fort wall highlights."
   }
 ];

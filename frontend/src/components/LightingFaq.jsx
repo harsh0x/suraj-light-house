@@ -21,17 +21,17 @@ export default function LightingFaq({ onImageClick }) {
             <div className="rounded-2xl overflow-hidden frame-white shadow-xl h-44 sm:h-52">
               <img 
                 src={IMAGES.faqLeftTop} 
-                alt="Chandelier Night Setup" 
+                alt="House Entrance Fairy Lights & Traditional Signage" 
                 className="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
-                onClick={() => onImageClick({ url: IMAGES.faqLeftTop, title: "Canopy Chandelier Installation" })}
+                onClick={() => onImageClick({ url: IMAGES.faqLeftTop, title: "House Entrance Illumination & Traditional Gate Decor" })}
               />
             </div>
             <div className="rounded-2xl overflow-hidden frame-rose shadow-lg h-36 sm:h-44">
               <img 
                 src={IMAGES.faqLeftBottom} 
-                alt="Stage Lighting Rig" 
+                alt="Street Facade Drapes & Waterfall Lights" 
                 className="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
-                onClick={() => onImageClick({ url: IMAGES.faqLeftBottom, title: "Intelligent Beam Trussing" })}
+                onClick={() => onImageClick({ url: IMAGES.faqLeftBottom, title: "Street Facade Colorful Drapes & Waterfall String Lights" })}
               />
             </div>
           </motion.div>
@@ -102,9 +102,9 @@ export default function LightingFaq({ onImageClick }) {
             <div className="rounded-2xl overflow-hidden frame-white shadow-2xl w-full h-[320px] sm:h-[400px]">
               <img 
                 src={IMAGES.faqRight} 
-                alt="Chandelier Gala Setup" 
+                alt="Rooftop Fairy Light Canopy & Sangeet Setup" 
                 className="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
-                onClick={() => onImageClick({ url: IMAGES.faqRight, title: "Royal Evening Chandelier Ambience" })}
+                onClick={() => onImageClick({ url: IMAGES.faqRight, title: "Rooftop & Terrace Fairy Light Mesh Canopy & Floor Sangeet" })}
               />
             </div>
           </motion.div>

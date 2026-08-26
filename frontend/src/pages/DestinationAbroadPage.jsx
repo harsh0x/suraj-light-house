@@ -53,7 +53,7 @@ const destinationsAbroad = [
     id: 'italy',
     country: 'Lake Como & Amalfi, Italy',
     tag: 'Lakeside Renaissance Villas',
-    image: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80',
     desc: 'Lakeside palazzos, cascading cliffside Mediterranean gardens, and candlelit courtyard chandelier banquets.',
     venues: ['Villa d’Este Lake Como', 'Villa Balbiano', 'Belmond Hotel Caruso', 'Villa Cimbrone'],
     idealSeason: 'May to October',
@@ -99,7 +99,7 @@ const internationalServices = [
 const INTERNATIONAL_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=2000&q=85',
+    image: 'https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=2000&q=85',
     sub: '✦ Global Stagecraft & Royal Heritage ✦',
     title: 'International Destination Production',
     desc: 'Bringing Rajasthan’s royal lighting elegance, crystal chandelier grandeur, and flawless technical direction to luxury destination celebrations worldwide.'

@@ -7,21 +7,21 @@ const LUXURY_EASE = [0.25, 1, 0.5, 1];
 const ABOUT_SLIDES = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85",
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=85",
     sub: "✦ Passion, Engineering & Royal Grandeur ✦",
     title: "The Visionaries Behind The Light",
     desc: "For decades, Suraj Light House (Suraj Light's Ranthambore) has been Rajasthan's premier mastercraft event lighting, heritage tenting, and theatrical decor company."
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=2000&q=85",
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=85",
     sub: "✦ Masters of Theatrical Illumination ✦",
     title: "Crafting Luminous Spectacles",
     desc: "Transforming open grounds, wildlife resorts, and royal fort courtyards into breathtaking wonderlands with crystal chandeliers and fairy light canopies."
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2000&q=85",
+    image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=2000&q=85",
     sub: "✦ Industrial Grade Reliability ✦",
     title: "Fail-Safe Heavy Power Grids",
     desc: "Equipped with dedicated silent diesel generators, aluminum truss architecture, and computerized DMX consoles for zero-downtime celebrations."
@@ -107,7 +107,7 @@ export default function AboutUsPage({ onOpenBooking }) {
                 onClick={() => onOpenBooking('Full Event Lighting')}
                 className="px-8 py-3.5 rounded-full bg-white/20 hover:bg-white/30 text-white font-bold text-xs tracking-widest uppercase backdrop-blur-md border border-white/30 transition-all hover:scale-105 cursor-pointer"
               >
-                Request a Quote
+                Book Your Light
               </button>
             </div>
           </div>
@@ -127,7 +127,7 @@ export default function AboutUsPage({ onOpenBooking }) {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-white transform hover:scale-[1.02] transition duration-700">
                 <img 
-                  src="https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=1200&q=85" 
+                  src="https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?auto=format&fit=crop&w=1200&q=85" 
                   alt="Suraj Light House Royal Chandelier Setup" 
                   className="w-full h-[520px] sm:h-[600px] object-cover object-center"
                 />
@@ -369,6 +369,132 @@ export default function AboutUsPage({ onOpenBooking }) {
             </div>
 
           </motion.div>
+        </section>
+
+        {/* 5.5. SECTION 5.5: STUDIO & HEADQUARTERS MAP */}
+        <section className="py-20 sm:py-24 bg-[#FAF6F0] px-4 sm:px-6 md:px-12 lg:px-16 border-t border-rose-100">
+          <div className="max-w-7xl mx-auto">
+            
+            <div className="text-center max-w-3xl mx-auto mb-14">
+              <span className="font-serif text-xs sm:text-sm tracking-[0.25em] uppercase font-bold text-[#E63956] block mb-2">
+                ✦ Studio, Workshop & Generator Depot ✦
+              </span>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#1A1A1A] font-bold tracking-tight mb-4">
+                Visit Our Studio in Sawai Madhopur
+              </h2>
+              <p className="font-sans text-xs sm:text-sm text-[#5A5255] font-light leading-relaxed">
+                Located on Ranthambore National Park Road, our state-of-the-art staging hub houses our complete inventory of crystal chandeliers, trussing systems, and silent generator fleets.
+              </p>
+            </div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{ duration: 0.85, ease: LUXURY_EASE }}
+              className="bg-white rounded-3xl border border-rose-200/90 shadow-2xl overflow-hidden"
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-12">
+                
+                {/* Map Column */}
+                <div className="lg:col-span-7 h-[400px] sm:h-[480px] relative bg-neutral-100">
+                  <iframe
+                    title="Suraj Light House Studio Map"
+                    src="https://maps.google.com/maps?q=Ranthambore+Road,+Sawai+Madhopur,+Rajasthan&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full filter contrast-[1.05] saturate-[1.1]"
+                  ></iframe>
+
+                  {/* Floating Location Tag */}
+                  <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-xl border border-rose-200/80 flex items-center gap-3 pointer-events-none">
+                    <div className="w-8 h-8 rounded-full bg-[#E63956] text-white flex items-center justify-center text-xs shadow-md">
+                      <i className="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                      <span className="font-serif font-bold text-xs text-[#1A1A1A] block">Suraj Light House Studio</span>
+                      <span className="text-[10px] text-gray-500">Ranthambore Road, Rajasthan</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Studio Hub Highlights */}
+                <div className="lg:col-span-5 p-8 sm:p-10 bg-gradient-to-b from-white to-[#FAF6F0] flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-rose-100">
+                  <div className="space-y-6">
+                    <div>
+                      <span className="text-[10px] font-bold tracking-widest uppercase text-[#E63956] block mb-1">
+                        CENTRAL STAGING BASE
+                      </span>
+                      <h3 className="font-serif text-2xl text-[#1A1A1A] font-bold">
+                        Ranthambore Production Hub
+                      </h3>
+                      <p className="text-xs text-[#5A5255] mt-2 leading-relaxed font-light">
+                        Our centralized operations facility ensures rapid 24/7 mobilization across Nahargarh Palace, Six Senses Fort Barwara, Oberoi Vanyavilas, and venues throughout Rajasthan.
+                      </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                      <div className="p-3.5 rounded-2xl bg-rose-50/60 border border-rose-100">
+                        <i className="fa-solid fa-wand-magic-sparkles text-[#E63956] text-sm mb-1.5 block"></i>
+                        <h5 className="font-serif text-xs font-bold text-[#1A1A1A]">Lighting Studio</h5>
+                        <p className="text-[10px] text-gray-500 font-light mt-0.5">Custom chandelier & DMX beam staging</p>
+                      </div>
+
+                      <div className="p-3.5 rounded-2xl bg-rose-50/60 border border-rose-100">
+                        <i className="fa-solid fa-bolt text-[#E63956] text-sm mb-1.5 block"></i>
+                        <h5 className="font-serif text-xs font-bold text-[#1A1A1A]">Power Grid Depot</h5>
+                        <p className="text-[10px] text-gray-500 font-light mt-0.5">Heavy soundproof Cummins DG gensets</p>
+                      </div>
+
+                      <div className="p-3.5 rounded-2xl bg-rose-50/60 border border-rose-100">
+                        <i className="fa-solid fa-campground text-[#E63956] text-sm mb-1.5 block"></i>
+                        <h5 className="font-serif text-xs font-bold text-[#1A1A1A]">Tenting Workshop</h5>
+                        <p className="text-[10px] text-gray-500 font-light mt-0.5">Handcrafted shamiyanas & German pagodas</p>
+                      </div>
+
+                      <div className="p-3.5 rounded-2xl bg-rose-50/60 border border-rose-100">
+                        <i className="fa-solid fa-handshake text-[#E63956] text-sm mb-1.5 block"></i>
+                        <h5 className="font-serif text-xs font-bold text-[#1A1A1A]">Client Lounge</h5>
+                        <p className="text-[10px] text-gray-500 font-light mt-0.5">Personalized wedding lighting consultations</p>
+                      </div>
+                    </div>
+
+                    <div className="space-y-1 pt-1 text-xs text-[#5A5255]">
+                      <p><strong className="text-[#1A1A1A]">Address:</strong> Ranthambore National Park Road, Sawai Madhopur, RJ 322001</p>
+                      <p><strong className="text-[#1A1A1A]">Direct Contacts:</strong> +91 9782962963 • +91 9414310499</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-rose-200/80 flex flex-col sm:flex-row gap-3">
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=Suraj+Light+House+Ranthambore+Road+Sawai+Madhopur+Rajasthan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 py-3 px-4 rounded-xl bg-[#E63956] hover:bg-[#CF203E] text-white font-bold text-xs tracking-wider uppercase shadow-md flex items-center justify-center gap-2 transition"
+                    >
+                      <i className="fa-solid fa-diamond-turn-right text-xs"></i>
+                      <span>Get Directions</span>
+                    </a>
+
+                    <a
+                      href="tel:+919782962963"
+                      className="py-3 px-5 rounded-xl bg-white hover:bg-rose-50 text-[#E63956] border border-rose-200 font-bold text-xs tracking-wider uppercase shadow-sm flex items-center justify-center gap-2 transition"
+                    >
+                      <i className="fa-solid fa-phone text-xs"></i>
+                      <span>Call Us</span>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </motion.div>
+
+          </div>
         </section>
 
         {/* 6. SECTION 6: OUR EXPERTISE BANNER */}

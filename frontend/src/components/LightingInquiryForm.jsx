@@ -96,10 +96,10 @@ export default function LightingInquiryForm({ onShowToast }) {
             ✦ Reserve Your Event Date ✦
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-[#1A1A1A] font-bold tracking-tight mb-3">
-            Light Up Your Event
+            Let's Illuminate Your Big Day
           </h2>
           <p className="font-sans text-xs sm:text-sm text-[#5A5255] max-w-xl mx-auto leading-relaxed font-light">
-            Fill out your details below to receive a customized lighting & tenting proposal from Suraj Light House.
+            Connect with Rajasthan's master event illuminators and royal tenting artisans to craft an unforgettable spectacle.
           </p>
         </motion.div>
 
@@ -150,7 +150,7 @@ export default function LightingInquiryForm({ onShowToast }) {
                 </label>
                 <input 
                   type="text" 
-                  placeholder="e.g. Sharma Royal Wedding / Corporate Gala"
+                  placeholder="e.g. Sharma Royal Wedding / Gala Night"
                   value={formData.partnerName}
                   onChange={(e) => handleChange('partnerName', e.target.value)}
                   className="w-full px-4 py-3.5 rounded-xl border border-rose-200/90 bg-[#FAF6F0] focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition placeholder-gray-400 font-medium"
@@ -187,7 +187,7 @@ export default function LightingInquiryForm({ onShowToast }) {
               </div>
             </motion.div>
 
-            {/* ROW 3: "ESTIMATED DATE", "ESTIMATED GUESTS", "DESIRED SERVICE" */}
+            {/* ROW 3: "EVENT DATE", "VENUE SIZE / AREA", "LIGHTING THEME REQUIRED" */}
             <motion.div variants={rowVariants} className="grid grid-cols-1 md:grid-cols-3 gap-5">
               <div>
                 <label className="block text-xs font-bold tracking-wider uppercase text-[#1A1A1A] mb-1.5">
@@ -202,35 +202,34 @@ export default function LightingInquiryForm({ onShowToast }) {
               </div>
               <div>
                 <label className="block text-xs font-bold tracking-wider uppercase text-[#1A1A1A] mb-1.5">
-                  ESTIMATED GUESTS
+                  VENUE SIZE / CAPACITY
                 </label>
                 <select 
                   value={formData.guests}
                   onChange={(e) => handleChange('guests', e.target.value)}
                   className="w-full px-4 py-3.5 rounded-xl border border-rose-200/90 bg-[#FAF6F0] focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition cursor-pointer font-medium"
                 >
-                  <option value="Under 150 Guests">Under 150 Guests</option>
-                  <option value="150 - 300 Guests">150 - 300 Guests</option>
-                  <option value="300 - 600 Guests">300 - 600 Guests</option>
-                  <option value="600 - 1200 Guests">600 - 1200 Guests</option>
-                  <option value="1200+ Royal Mega Setup">1200+ Royal Mega Setup</option>
+                  <option value="Intimate Lawn (Under 5,000 Sq Ft / 150 Guests)">Intimate Lawn (Under 5,000 Sq Ft)</option>
+                  <option value="Courtyard & Hall (5,000 - 15,000 Sq Ft / 300 Guests)">Courtyard & Hall (5,000 - 15,000 Sq Ft)</option>
+                  <option value="Grand Palace Grounds (15,000 - 35,000 Sq Ft / 600 Guests)">Grand Palace Grounds (15,000 - 35,000 Sq Ft)</option>
+                  <option value="Monumental Arena (35,000+ Sq Ft / 1200+ Guests)">Monumental Arena (35,000+ Sq Ft)</option>
                 </select>
               </div>
               <div>
                 <label className="block text-xs font-bold tracking-wider uppercase text-[#1A1A1A] mb-1.5">
-                  DESIRED SERVICE
+                  LIGHTING THEME REQUIRED
                 </label>
                 <select 
                   value={formData.service}
                   onChange={(e) => handleChange('service', e.target.value)}
                   className="w-full px-4 py-3.5 rounded-xl border border-rose-200/90 bg-[#FAF6F0] focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition cursor-pointer font-medium"
                 >
-                  <option value="Full Event Lighting">Full Event Lighting</option>
-                  <option value="Tenting & Decor">Tenting & Decor</option>
-                  <option value="Corporate Setup">Corporate Setup</option>
-                  <option value="Royal Heritage Wedding Decor">Royal Heritage Wedding Decor</option>
-                  <option value="Stage & Truss Illumination">Stage & Truss Illumination</option>
-                  <option value="Sound & Generator Redundancy">Sound & Generator Redundancy</option>
+                  <option value="Royal Amber Gold & Crystal Chandeliers">Royal Amber Gold & Crystal Chandeliers</option>
+                  <option value="Heritage Shamiyana & Tenting Architecture">Heritage Shamiyana & Tenting Architecture</option>
+                  <option value="Concert Stage, Truss & Moving Beams">Concert Stage, Truss & Moving Beams</option>
+                  <option value="Starry Night Fairy Tunnel & Edison Globes">Starry Night Fairy Tunnel & Edison Globes</option>
+                  <option value="Architectural Facade Wash & Laser FX">Architectural Facade Wash & Laser FX</option>
+                  <option value="Full Turnkey Event Illumination & Silent Power">Full Turnkey Event Illumination & Silent Power</option>
                 </select>
               </div>
             </motion.div>
@@ -242,7 +241,7 @@ export default function LightingInquiryForm({ onShowToast }) {
               </label>
               <textarea 
                 rows="4"
-                placeholder="Describe your venue location (e.g. Nahargarh Fort, Six Senses Barwara), desired chandelier quantities, stage dimensions, generator needs, or decor themes..."
+                placeholder="Describe your venue location (e.g. Nahargarh Fort, Six Senses Barwara, Sawai Vilas), desired chandelier quantities, stage trussing dimensions, generator requirements, or custom decor themes..."
                 value={formData.vision}
                 onChange={(e) => handleChange('vision', e.target.value)}
                 className="w-full px-4 py-3.5 rounded-xl border border-rose-200/90 bg-[#FAF6F0] focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition placeholder-gray-400 font-medium"
@@ -270,7 +269,7 @@ export default function LightingInquiryForm({ onShowToast }) {
                   </>
                 ) : (
                   <>
-                    <span>Request Event Lighting Quote</span>
+                    <span>Book Your Light</span>
                     <i className="fa-solid fa-arrow-right text-xs"></i>
                   </>
                 )}

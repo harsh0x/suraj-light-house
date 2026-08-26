@@ -5,48 +5,54 @@ import { Link } from 'react-router-dom';
 const LUXURY_EASE = [0.25, 1, 0.5, 1];
 
 const filterCategories = [
-  { id: 'palace-lighting', name: 'Palace & Fort Lighting' },
-  { id: 'chandeliers', name: 'Crystal Chandeliers' },
-  { id: 'stage-trussing', name: 'Stage Trussing & Special FX' },
-  { id: 'tenting-decor', name: 'Heritage Shamiyana & Tenting' },
-  { id: 'corporate-lighting', name: 'Corporate Summits & Galas' }
+  { id: 'decoration-stage', name: 'Stage & Mandap PAR Lighting' },
+  { id: 'par-wash-truss', name: 'PAR Lights & Moving Beams' },
+  { id: 'silent-generators', name: 'Silent Generators & Gensets' },
+  { id: 'mi-bars-kinetic', name: 'MI Bars & Kinetic Light Balls' },
+  { id: 'chandeliers-tents', name: 'Crystal Chandeliers & Tenting' },
+  { id: 'rise-cloud-fx', name: 'Rise Cloud Low Fog & Pyros' }
 ];
 
 const galleryItems = [
-  // Palace & Fort Lighting
-  { id: 1, category: 'palace-lighting', title: 'Nahargarh Palace Courtyard Illumination', location: 'Ranthambore, Rajasthan', url: 'https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=1400&q=85' },
-  { id: 2, category: 'palace-lighting', title: 'Six Senses Fort Barwara Amber Facade Wash', location: 'Sawai Madhopur, Rajasthan', url: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1400&q=85' },
-  { id: 3, category: 'palace-lighting', title: 'Oberoi Vanyavilas Fairy Light Tree Canopies', location: 'Ranthambore National Park Road', url: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85' },
-  { id: 4, category: 'palace-lighting', title: 'Royal Heritage Fort Rampart Floodlights', location: 'Jaipur, Rajasthan', url: 'https://images.unsplash.com/photo-1598890777032-bde835ba27c2?auto=format&fit=crop&w=1400&q=85' },
-  { id: 5, category: 'palace-lighting', title: 'Palace Lake Reflection Lighting', location: 'Udaipur, Rajasthan', url: 'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1400&q=85' },
-  { id: 6, category: 'palace-lighting', title: 'Sandstone Palace Golden Hour Glow', location: 'Jodhpur, Rajasthan', url: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=85' },
+  // Stage & Mandap PAR Lighting
+  { id: 1, category: 'decoration-stage', title: 'Flower Wall PAR Light Wash & Stage Mandap', location: 'Ranthambore Palace Grounds', url: 'https://images.unsplash.com/photo-photo-1517263904808-5dc91e3e7044?auto=format&fit=crop&w=1400&q=85' },
+  { id: 2, category: 'decoration-stage', title: 'Illuminated Mandap with Crystal Drops & Golden Wash', location: 'Nahargarh Palace Courtyard', url: 'https://images.unsplash.com/photo-photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=1400&q=85' },
+  { id: 3, category: 'decoration-stage', title: 'Red Drape Peacock Floral Entrance Archway', location: 'Sawai Vilas Resort', url: 'https://images.unsplash.com/photo-photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1400&q=85' },
+  { id: 4, category: 'decoration-stage', title: 'Ambient Welcome Board & Fairy Light Pathway', location: 'Six Senses Fort Barwara', url: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1400&q=85' },
 
-  // Crystal Chandeliers
-  { id: 7, category: 'chandeliers', title: 'Grand 40-Chandelier Open Courtyard Canopy', location: 'Nahargarh Palace, Ranthambore', url: 'https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=1400&q=85' },
-  { id: 8, category: 'chandeliers', title: 'Imperial Crystal Chandelier Dining Pavilion', location: 'Sawai Vilas, Sawai Madhopur', url: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1400&q=85' },
-  { id: 9, category: 'chandeliers', title: 'Floral Mandap with Tiered Crystal Drop Chandeliers', location: 'Royal Heritage Courtyard', url: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1400&q=85' },
-  { id: 10, category: 'chandeliers', title: 'Vintage Brass & Crystal Chandelier Alley', location: 'Jaipur Haveli Resort', url: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1400&q=85' },
+  // PAR Lights & Moving Beams
+  { id: 5, category: 'par-wash-truss', title: 'High-Power LED PAR 64 Stage Floor Uplights', location: 'Fairmont Jaipur Ballroom', url: 'https://images.unsplash.com/photo-photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1400&q=85' },
+  { id: 6, category: 'par-wash-truss', title: 'Heavy Aluminum Box Truss with Sharpy Moving Heads', location: 'Grand Sangeet Stage Arena', url: 'https://images.unsplash.com/photo-photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=1400&q=85' },
+  { id: 7, category: 'par-wash-truss', title: 'Concert RGBW Stage Wash Floodlights', location: 'Ranthambore Musical Night', url: 'https://images.unsplash.com/photo-photo-1468359601543-843bfaef291a?auto=format&fit=crop&w=1400&q=85' },
+  { id: 8, category: 'par-wash-truss', title: 'DMX Computerized Beam Synchronized Light Show', location: 'Rajasthan Convention Center', url: 'https://images.unsplash.com/photo-photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1400&q=85' },
 
-  // Stage Trussing & Special FX
-  { id: 11, category: 'stage-trussing', title: 'Heavy Aluminum Box Trussing with Moving Heads', location: 'Six Senses Fort Barwara Sangeet', url: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1400&q=85' },
-  { id: 12, category: 'stage-trussing', title: 'Concert DJ Stage with Full-Color RGB Lasers', location: 'Ranthambore Musical Night', url: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1400&q=85' },
-  { id: 13, category: 'stage-trussing', title: 'Sparkular Cold Pyrotechnic Grand Entry', location: 'Nahargarh Main Amphitheatre', url: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=85' },
-  { id: 14, category: 'stage-trussing', title: 'Dry Ice Low Fog Cloud for Royal Couple Dance', location: 'Jaipur Grand Ballroom', url: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=1400&q=85' },
+  // Silent Generators & Gensets
+  { id: 9, category: 'silent-generators', title: 'Soundproof Cummins Silent Diesel Generator Set', location: 'Ranthambore Outdoor Event Fleet', url: 'https://images.unsplash.com/photo-photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1400&q=85' },
+  { id: 10, category: 'silent-generators', title: 'Heavy Commercial Power DG Genset on Site', location: 'Six Senses Fort Barwara Power Grid', url: 'https://images.unsplash.com/photo-photo-1609137144822-48f574d6c41b?auto=format&fit=crop&w=1400&q=85' },
+  { id: 11, category: 'silent-generators', title: '3-Phase Armored Power Distribution Panel Grid', location: 'Palace Amphitheatre Substation', url: 'https://images.unsplash.com/photo-photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1400&q=85' },
+  { id: 12, category: 'silent-generators', title: 'Heavy Duty Event Power Redundancy Grid', location: 'Grand Royal Lawn Setup', url: 'https://images.unsplash.com/photo-photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=85' },
 
-  // Heritage Shamiyana & Tenting
-  { id: 15, category: 'tenting-decor', title: 'Traditional Rajasthani Handcrafted Shamiyana', location: 'Sawai Madhopur Palace Grounds', url: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85' },
-  { id: 16, category: 'tenting-decor', title: 'Waterproof German Hangar Dining Pavilion', location: 'Ranthambore Luxury Resort', url: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=1400&q=85' },
-  { id: 17, category: 'tenting-decor', title: 'Golden Silk Ceiling Drape with Warm Festoon Lights', location: 'Fort Courtyard Banquet', url: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1400&q=85' },
-  { id: 18, category: 'tenting-decor', title: 'Fairytale Fairy Light Tunnel Pathway', location: 'The Oberoi Vanyavilas Garden', url: 'https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1400&q=85' },
+  // MI Bars & Kinetic Light Balls
+  { id: 13, category: 'mi-bars-kinetic', title: 'Vertical DMX Pixel LED Tubes on Live Stage', location: 'Mega Sangeet Stage Setup', url: 'https://images.unsplash.com/photo-photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=85' },
+  { id: 14, category: 'mi-bars-kinetic', title: 'Motorized Dynamic Kinetic Light Spheres', location: 'Royal Grand Ballroom Ceiling', url: 'https://images.unsplash.com/photo-photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=85' },
+  { id: 15, category: 'mi-bars-kinetic', title: 'Moving MI Bar Pixel Lighting Chases', location: 'Celebrity DJ Concert Stage', url: 'https://images.unsplash.com/photo-photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=85' },
+  { id: 16, category: 'mi-bars-kinetic', title: '3D Suspended Kinetic Ball Matrix Installation', location: 'VIP Gala Night Lounge', url: 'https://images.unsplash.com/photo-photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1400&q=85' },
 
-  // Corporate Summits & Galas
-  { id: 19, category: 'corporate-lighting', title: 'National Leadership Summit Keynote Stage', location: 'Rajasthan Convention Centre', url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1400&q=85' },
-  { id: 20, category: 'corporate-lighting', title: 'Annual Corporate Awards & Gala Stage', location: 'Jaipur Grand Ballroom', url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=85' },
-  { id: 21, category: 'corporate-lighting', title: 'Automobile Product Launch Spotlight Rig', location: 'Convention Hangar Setup', url: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=1400&q=85' }
+  // Crystal Chandeliers & Tenting
+  { id: 17, category: 'chandeliers-tents', title: 'Grand 40-Chandelier Suspended Open Canopy', location: 'Nahargarh Palace Main Courtyard', url: 'https://images.unsplash.com/photo-photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1400&q=85' },
+  { id: 18, category: 'chandeliers-tents', title: 'Multi-Tiered Crystal Chandelier Dining Pavilion', location: 'Sawai Vilas Luxury Lawn', url: 'https://images.unsplash.com/photo-photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=85' },
+  { id: 19, category: 'chandeliers-tents', title: 'Waterproof German Hangar & Handcrafted Shamiyana', location: 'Ranthambore Luxury Grounds', url: 'https://images.unsplash.com/photo-photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1400&q=85' },
+  { id: 20, category: 'chandeliers-tents', title: 'Golden Silk Ceiling Drapes with Festoon Lights', location: 'Heritage Fort Courtyard', url: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1400&q=85' },
+
+  // Rise Cloud Low Fog & Pyros
+  { id: 21, category: 'rise-cloud-fx', title: 'Thick White Dry Ice Low Fog Rise Cloud on Stage', location: 'Royal Couple Grand Dance', url: 'https://images.unsplash.com/photo-photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1400&q=85' },
+  { id: 22, category: 'rise-cloud-fx', title: 'Sparkular Cold Pyrotechnic Fountain Grand Entry', location: 'Nahargarh Main Amphitheatre', url: 'https://images.unsplash.com/photo-photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1400&q=85' },
+  { id: 23, category: 'rise-cloud-fx', title: 'Cryogenic CO2 Jets & Stage Fog Special FX', location: 'Sangeet Headline Concert', url: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1400&q=85' },
+  { id: 24, category: 'rise-cloud-fx', title: '10,000 Fairy Light Canopy Starlight Tunnel', location: 'The Oberoi Vanyavilas Garden', url: 'https://images.unsplash.com/photo-photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1400&q=85' }
 ];
 
 export default function GalleryPage() {
-  const [selectedCategory, setSelectedCategory] = useState('palace-lighting');
+  const [selectedCategory, setSelectedCategory] = useState('decoration-stage');
   const [lightboxIndex, setLightboxIndex] = useState(null);
   const [isSlideshow, setIsSlideshow] = useState(false);
   const [isZoomed, setIsZoomed] = useState(false);
@@ -108,10 +114,10 @@ export default function GalleryPage() {
               ✦ Production Showcase ✦
             </span>
             <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-4">
-              Our Grand Lighting & Decor Gallery
+              Real Event Lighting & Equipment Gallery
             </h1>
             <p className="font-sans text-xs sm:text-sm md:text-base text-rose-100 max-w-2xl mx-auto font-light leading-relaxed">
-              Explore our portfolio of crystal chandelier canopies, royal shamiyana setups, palace floodlighting, and stage trussing across Ranthambore & Rajasthan.
+              Explore our real stage PAR light washes, heavy silent DG generators, MI bars, kinetic balls, crystal chandeliers, and rise cloud low fog setups across Ranthambore & Rajasthan.
             </p>
           </div>
         </section>
@@ -140,7 +146,7 @@ export default function GalleryPage() {
 
         {/* Gallery Grid */}
         <section className="py-16 sm:py-20 px-4 sm:px-6 md:px-12 lg:px-16 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8">
             {filteredItems.map((item, idx) => (
               <motion.div
                 key={item.id}
@@ -149,18 +155,18 @@ export default function GalleryPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.05 }}
                 onClick={() => setLightboxIndex(idx)}
-                className="group relative rounded-3xl overflow-hidden shadow-md border border-rose-200/80 bg-white cursor-pointer h-72 sm:h-80"
+                className="group relative rounded-3xl overflow-hidden shadow-md border border-rose-200/80 bg-white cursor-pointer h-80 sm:h-96"
               >
                 <img 
                   src={item.url} 
                   alt={item.title} 
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-80 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-85 group-hover:opacity-100 transition-opacity p-6 sm:p-8 flex flex-col justify-end">
                   <span className="text-[10px] font-bold uppercase tracking-widest text-[#FFCCD3] block mb-1">
                     {item.location}
                   </span>
-                  <h3 className="font-serif text-lg sm:text-xl text-white font-bold leading-snug">
+                  <h3 className="font-serif text-lg sm:text-2xl text-white font-bold leading-snug">
                     {item.title}
                   </h3>
                   <div className="mt-3 flex items-center gap-2 text-xs text-rose-200 opacity-0 group-hover:opacity-100 transition-opacity">

@@ -30,7 +30,7 @@ export default function SurajCommitment({ onOpenBooking, onImageClick }) {
                 onClick={() => onOpenBooking('Full Event Lighting')}
                 className="px-8 py-3.5 rounded-full bg-[#E63956] hover:bg-[#CF203E] text-white text-xs font-bold tracking-wider uppercase shadow-xl transition transform hover:-translate-y-0.5 cursor-pointer"
               >
-                Plan Your Event
+                Book Your Light
               </button>
             </div>
           </motion.div>
@@ -49,9 +49,9 @@ export default function SurajCommitment({ onOpenBooking, onImageClick }) {
               <div className="absolute top-0 left-4 w-[52%] h-[65%] rounded-2xl overflow-hidden frame-white shadow-xl z-10">
                 <img 
                   src={IMAGES.commit1} 
-                  alt="Chandelier & Mandap Setup" 
+                  alt="Radiating Canopy Drapes & Fairy Lights" 
                   className="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
-                  onClick={() => onImageClick({ url: IMAGES.commit1, title: "Royal Mandap Lighting" })}
+                  onClick={() => onImageClick({ url: IMAGES.commit1, title: "Radiating Canopy Drapes & Center Chandelier" })}
                 />
               </div>
 
@@ -59,9 +59,9 @@ export default function SurajCommitment({ onOpenBooking, onImageClick }) {
               <div className="absolute top-6 right-2 w-[48%] h-[60%] rounded-2xl overflow-hidden frame-rose shadow-lg">
                 <img 
                   src={IMAGES.commit2} 
-                  alt="Evening Ambience" 
+                  alt="Moonlit Hanging Lanterns & Ambient Trees" 
                   className="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
-                  onClick={() => onImageClick({ url: IMAGES.commit2, title: "Evening Atmospheric Ambience" })}
+                  onClick={() => onImageClick({ url: IMAGES.commit2, title: "Moonlit Hanging Lanterns & Ambient Trees" })}
                 />
               </div>
 
@@ -69,9 +69,9 @@ export default function SurajCommitment({ onOpenBooking, onImageClick }) {
               <div className="absolute bottom-0 left-[20%] w-[60%] h-[68%] rounded-2xl overflow-hidden frame-white shadow-2xl z-20">
                 <img 
                   src={IMAGES.commit3} 
-                  alt="Palace Illumination" 
+                  alt="Night Bistro Festoon Canopy" 
                   className="w-full h-full object-cover hover:scale-105 transition duration-500 cursor-pointer"
-                  onClick={() => onImageClick({ url: IMAGES.commit3, title: "Grand Palace Heritage Illumination" })}
+                  onClick={() => onImageClick({ url: IMAGES.commit3, title: "Festoon String Lights & Tree Canopy Illumination" })}
                 />
               </div>
 

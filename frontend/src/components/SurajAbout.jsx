@@ -165,7 +165,7 @@ export default function SurajAbout({ onOpenBooking, onImageClick }) {
                 onClick={() => onOpenBooking('Full Event Lighting')}
                 className="px-6 py-2.5 rounded-full bg-[#E63956] hover:bg-[#CF203E] text-white text-xs font-semibold tracking-wider uppercase shadow-md cursor-pointer"
               >
-                Get a Quote
+                Book Your Light
               </motion.button>
               
               <motion.a 
@@ -179,7 +179,7 @@ export default function SurajAbout({ onOpenBooking, onImageClick }) {
                 href="#services"
                 className="px-6 py-2.5 rounded-full bg-white hover:bg-rose-50 text-[#E63956] border border-[#E63956] text-xs font-semibold tracking-wider uppercase shadow-sm cursor-pointer"
               >
-                View Services
+                Our Setups
               </motion.a>
             </div>
 

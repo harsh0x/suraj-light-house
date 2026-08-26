@@ -4,31 +4,24 @@ import { motion, AnimatePresence } from 'framer-motion';
 const HERO_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=90',
-    subTitle: 'Suraj Light\'s Ranthambore',
-    heading: 'Illuminating Your Grandest Celebrations in Ranthambore',
+    image: '/assets/hero-facade-lighting.jpg',
+    subTitle: "Suraj Light's Ranthambore",
+    heading: "Illuminating Ranthambore's Most Royal Celebrations",
     desc: 'From royal heritage palace weddings to mega corporate summits, we engineer breathtaking event lighting, majestic tenting, and grand Rajasthani decor with precision craftsmanship and zero-downtime execution.'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=2000&q=90',
-    subTitle: 'Royal Shamiyana & Tenting',
-    heading: 'Grand Canopy & Crystal Chandelier Architecture',
-    desc: 'Transform open lawns and heritage fort courtyards into opulent wonderland venues draped with cascading fairy lights, hand-stitched canopies, and crystal chandelier arrays.'
+    image: '/assets/hero-royal-stage.jpg',
+    subTitle: 'Grand Royal Stage & Chandeliers',
+    heading: 'Where Opulent Radiance Meets Royal Heritage',
+    desc: 'Lush botanical floral canopies, imported crystal chandeliers, and warm architectural wash lights crafting breathtaking mandaps and royal stages.'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=2000&q=90',
-    subTitle: 'Concert Grade Trussing & Sound',
-    heading: 'Electrifying Stage Lighting & Sangeet Productions',
-    desc: 'High-intensity beam moving heads, sharpies, computerized DMX light sync, and concert-grade aluminum truss systems designed for legendary musical nights and celebrity artists.'
-  },
-  {
-    id: 4,
-    image: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=2000&q=90',
-    subTitle: 'Architectural Fort Illumination',
-    heading: 'Bathing Ranthambore\'s Palaces in Warm Golden Radiance',
-    desc: 'Specialized facade wash, amber floodlights, and ambient perimeter lighting highlighting the timeless stone arches and royal heritage of Rajasthan.'
+    image: '/assets/hero-canopy-lighting.jpg',
+    subTitle: 'Heritage Tenting & Star Canopy',
+    heading: 'Grand Fairy Light Marquees & Open-Sky Canopies',
+    desc: 'Radiant starlit fairy light marquees and festoon canopies transforming expansive heritage palace lawns into luminous open-sky celebrations.'
   }
 ];
 
@@ -113,7 +106,7 @@ export default function SurajHero({ onOpenBooking }) {
             onClick={() => onOpenBooking('Full Event Lighting')}
             className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-[#E63956] hover:bg-[#CF203E] text-white text-xs sm:text-sm font-semibold tracking-widest uppercase shadow-2xl transition transform hover:scale-105 active:scale-95 cursor-pointer border border-white/20"
           >
-            Get a Quote
+            Book Your Light
           </button>
 
           {/* Right Button: White pill button */}
@@ -121,14 +114,11 @@ export default function SurajHero({ onOpenBooking }) {
             href="#portfolio"
             className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white hover:bg-rose-50 text-[#E63956] border-2 border-[#E63956] text-xs sm:text-sm font-semibold tracking-widest uppercase shadow-2xl text-center transition transform hover:scale-105 active:scale-95 cursor-pointer"
           >
-            View Our Setups
+            Grand Setups
           </a>
         </motion.div>
 
       </div>
-
-      {/* Clean bottom spacer */}
-      <div className="relative z-20 w-full h-8 pointer-events-none"></div>
 
     </div>
   );

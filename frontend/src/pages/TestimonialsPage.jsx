@@ -8,8 +8,8 @@ const TESTIMONIALS = [
     venue: "Nahargarh Palace, Ranthambore",
     date: "December 2025",
     rating: 5,
-    quote: "Suraj Light House turned Nahargarh into an absolute fairytale wonderland! The 40+ crystal chandeliers hanging over our open-air courtyard reception and the amber facade wash took everyone's breath away. Their generator backups ran seamlessly through our 1200-guest sangeet without a single microsecond of flicker.",
-    image: "https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?auto=format&fit=crop&w=400&q=80"
+    quote: "Suraj Light's team turned Nahargarh into an absolute royal wonderland! The 40+ imported crystal chandeliers hanging over our open-air palace courtyard and the amber facade wash took everyone's breath away. Their silent generator grids ran flawlessly throughout our 1,200-guest sangeet and reception without a single microsecond of flicker.",
+    image: "/assets/client-couple-1.jpg"
   },
   {
     id: 2,
@@ -17,8 +17,8 @@ const TESTIMONIALS = [
     venue: "Six Senses Fort Barwara, Sawai Madhopur",
     date: "January 2026",
     rating: 5,
-    quote: "The stage trussing and concert lighting provided by Suraj Light House for our musical sangeet night was beyond world-class. Sharpie moving heads, laser synchronization, and heavy low fog made our celebrity artist performance feel like an international stadium concert.",
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=400&q=80"
+    quote: "The heavy concert stage trussing and intelligent moving beam lighting engineered by Suraj Light's master technicians made our musical sangeet night truly unforgettable. Sharpie moving heads, laser synchronization, and heavy low fog created a stadium-grade spectacle that left our guests mesmerized.",
+    image: "/assets/client-couple-2.jpg"
   },
   {
     id: 3,
@@ -26,35 +26,26 @@ const TESTIMONIALS = [
     venue: "The Oberoi Vanyavilas, Ranthambore",
     date: "November 2025",
     rating: 5,
-    quote: "Suraj Light House's heritage shamiyana and fairy light tunnel created an ethereal atmosphere for our pheras under the stars. Their on-site technicians monitored every circuit all night with extreme politeness and professional perfection.",
-    image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=400&q=80"
+    quote: "Suraj Light's handcrafted royal shamiyanas and 10,000-bulb fairy light tunnel canopy created an ethereal atmosphere for our royal pheras under the desert night sky. Their on-site electrical engineers monitored every single luminaire with seamless perfection.",
+    image: "/assets/client-couple-3.jpg"
   },
   {
     id: 4,
-    couple: "Aditya & Sanjana Khandelwal",
-    venue: "Sawai Vilas Resort, Sawai Madhopur",
-    date: "February 2026",
-    rating: 5,
-    quote: "Prompt setup, pristine heavy equipment, and unmatched local knowledge of Ranthambore power requirements. The Suraj Light House team arrived a full day early, coordinated with our wedding planners, and delivered the most spectacular lighting display we have ever witnessed.",
-    image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=400&q=80"
-  },
-  {
-    id: 5,
     couple: "Devendra & Radhika Joshi",
     venue: "Fort Rajwada & Royal Courtyards",
     date: "October 2025",
     rating: 5,
-    quote: "We required high-voltage silent diesel generators, custom truss arches, and warm vintage Edison filaments for a 3-day royal wedding. Suraj Light House handled the entire power distribution and decor lighting with zero stress. Truly the best lighting company in Rajasthan!",
-    image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=400&q=80"
+    quote: "We required multi-tier crystal chandeliers, custom truss arches, and triple-redundant power for a 3-day royal celebration. Suraj Light's team handled the entire electrical distribution and majestic decor lighting with effortless authority. The premier lighting house in Rajasthan!",
+    image: "/assets/client-couple-4.jpg"
   },
   {
-    id: 6,
-    couple: "Rohan & Natasha Mehra",
-    venue: "Taj Sawai Madhopur Lodge",
-    date: "March 2026",
+    id: 5,
+    couple: "Ranveer & Padmini Sisodia",
+    venue: "Sawai Vilas Resort, Sawai Madhopur",
+    date: "February 2026",
     rating: 5,
-    quote: "From our intimate pre-wedding dinner to our grand reception, the atmospheric amber wash and bespoke crystal chandelier arrangements transformed the entire heritage property into an unforgettable royal dream.",
-    image: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=400&q=80"
+    quote: "Punctual setup, pristine heavy-duty equipment, and unmatched mastery of Ranthambore power loads. Suraj Light's team arrived a day early, erected waterproof German pagodas, and sculpted the most magnificent amber architectural lighting display we have ever witnessed.",
+    image: "/assets/client-couple-5.jpg"
   }
 ];
 

@@ -4,13 +4,13 @@ import { IMAGES } from '../data/lightingData';
 
 export default function MosaicGallery({ onImageClick }) {
   const mosaicItems = [
-    { img: IMAGES.mosaic1, title: "Royal Chandelier Canopy" },
-    { img: IMAGES.mosaic2, title: "Warm Fairy Light Tunnel" },
-    { img: IMAGES.mosaic3, title: "Concert Stage Trussing" },
-    { img: IMAGES.mosaic4, title: "Heritage Shamiyana Pavilion" },
-    { img: IMAGES.mosaic5, title: "Crystal Chandelier Rows" },
-    { img: IMAGES.mosaic6, title: "Amber Palace Uplighting" },
-    { img: IMAGES.mosaic7, title: "Fort Courtyard Illumination" },
+    { img: IMAGES.mosaic1, title: "Hanging Flora & Birds Chandeliers" },
+    { img: IMAGES.mosaic2, title: "Grand Tiered Crystal Chandeliers" },
+    { img: IMAGES.mosaic3, title: "Royal Crimson Drape Entrance" },
+    { img: IMAGES.mosaic4, title: "Illuminated Flower Lamp Pathway" },
+    { img: IMAGES.mosaic5, title: "Grand Floral Arch & Chandeliers" },
+    { img: IMAGES.mosaic6, title: "Mirror Pegasus & Chandelier Lawn" },
+    { img: IMAGES.mosaic7, title: "Illuminated Leaf Arch Tunnel" },
   ];
 
   return (

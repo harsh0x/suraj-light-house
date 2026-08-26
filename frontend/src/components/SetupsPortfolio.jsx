@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { INITIAL_PORTFOLIO } from '../data/lightingData';
 
 export default function SetupsPortfolio({ portfolioItems = [], onOpenBooking, onImageClick }) {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const items = portfolioItems && portfolioItems.length > 0 ? portfolioItems : [];
+  const rawItems = portfolioItems && portfolioItems.length > 0 ? portfolioItems : INITIAL_PORTFOLIO;
+  const items = rawItems.some(it => it.title?.includes('Sunlit') || it.location?.includes('Florida'))
+    ? INITIAL_PORTFOLIO 
+    : rawItems;
   const currentItem = items[activeIndex] || items[0] || {};
 
   return (

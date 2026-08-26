@@ -84,10 +84,10 @@ export default function LightFeatures({ onOpenBooking, onImageClick }) {
           </h2>
         </motion.div>
 
-        {/* 3 Main Circular Feature Cards (Heritage Tenting, Premium Lighting, Royal Event Decor) */}
+        {/* 3 Main Circular Feature Cards (Bespoke Lighting, Royal Tenting, Flawless Execution) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12 mb-16">
           
-          {/* Card 1: Heritage Tenting */}
+          {/* Card 1: Bespoke Lighting */}
           <motion.div 
             initial={{ opacity: 0, y: 40, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -100,23 +100,23 @@ export default function LightFeatures({ onOpenBooking, onImageClick }) {
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 350, damping: 18 }}
               className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-white shadow-2xl mb-6 cursor-pointer relative bg-black/20" 
-              onClick={() => onImageClick({ url: IMAGES.why1, title: "Heritage Tenting Architecture" })}
+              onClick={() => onImageClick({ url: IMAGES.why1, title: "Bespoke Grand Ballroom Chandeliers & Floral Ceiling" })}
             >
               <img 
                 src={IMAGES.why1} 
-                alt="Heritage Tenting" 
+                alt="Bespoke Grand Ballroom Lighting" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-out" 
               />
             </motion.div>
             <h3 className="font-serif text-2xl text-white font-bold mb-3">
-              Heritage Tenting
+              Bespoke Lighting
             </h3>
             <p className="font-sans text-xs text-white/95 leading-relaxed font-light max-w-xs">
-              Custom hand-crafted royal shamiyanas, waterproof German pagodas, and majestic silk canopies built for grand gatherings.
+              Architectural palace washes, imported crystal chandeliers, fairy light tunnel canopies, and computerized DMX light shows tailored to your royal theme.
             </p>
           </motion.div>
 
-          {/* Card 2: Premium Lighting */}
+          {/* Card 2: Royal Tenting */}
           <motion.div 
             initial={{ opacity: 0, y: 40, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -129,23 +129,23 @@ export default function LightFeatures({ onOpenBooking, onImageClick }) {
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 350, damping: 18 }}
               className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-white shadow-2xl mb-6 cursor-pointer relative bg-black/20" 
-              onClick={() => onImageClick({ url: IMAGES.why2, title: "Premium Event Lighting" })}
+              onClick={() => onImageClick({ url: IMAGES.why2, title: "Royal Scalloped Silk Tenting & Drop Lanterns" })}
             >
               <img 
                 src={IMAGES.why2} 
-                alt="Premium Lighting" 
+                alt="Royal Scalloped Silk Tenting" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-out" 
               />
             </motion.div>
             <h3 className="font-serif text-2xl text-white font-bold mb-3">
-              Premium Lighting
+              Royal Tenting
             </h3>
             <p className="font-sans text-xs text-white/95 leading-relaxed font-light max-w-xs">
-              Architectural palace wash, imported crystal chandeliers, fairy light tunnels, and computerized intelligent DMX lighting shows.
+              Custom hand-crafted Rajasthani shamiyanas, waterproof German pagodas, and majestic silk-draped pavilions engineered for imperial celebrations.
             </p>
           </motion.div>
 
-          {/* Card 3: Royal Event Decor */}
+          {/* Card 3: Flawless Execution */}
           <motion.div 
             initial={{ opacity: 0, y: 40, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -158,19 +158,19 @@ export default function LightFeatures({ onOpenBooking, onImageClick }) {
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 350, damping: 18 }}
               className="w-40 h-40 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-white shadow-2xl mb-6 cursor-pointer relative bg-black/20" 
-              onClick={() => onImageClick({ url: IMAGES.why3, title: "Royal Event Decor & Trussing" })}
+              onClick={() => onImageClick({ url: IMAGES.why3, title: "Illuminated Fairy Light Walkway & Chandeliers" })}
             >
               <img 
                 src={IMAGES.why3} 
-                alt="Royal Event Decor" 
+                alt="Illuminated Fairy Light Walkway" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-700 ease-out" 
               />
             </motion.div>
             <h3 className="font-serif text-2xl text-white font-bold mb-3">
-              Royal Event Decor
+              Flawless Execution
             </h3>
             <p className="font-sans text-xs text-white/95 leading-relaxed font-light max-w-xs">
-              Stage architecture, heavy-duty aluminum trussing, floral integration, and vintage ambient brass lantern setups.
+              Heavy-duty aluminum trussing, triple-redundant silent power generator grids, and master electrical engineers guaranteeing uninterrupted splendor.
             </p>
           </motion.div>
 
@@ -194,7 +194,7 @@ export default function LightFeatures({ onOpenBooking, onImageClick }) {
             onClick={() => onOpenBooking('Full Event Lighting')}
             className="px-9 py-3.5 rounded-full bg-white hover:bg-rose-50 text-[#E63956] text-xs font-bold tracking-wider uppercase shadow-xl transition cursor-pointer"
           >
-            Get a Quote
+            Book Your Light
           </motion.button>
         </motion.div>
 

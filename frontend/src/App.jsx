@@ -222,7 +222,7 @@ export default function App() {
     const loadPortfolio = async () => {
       try {
         const items = await fetchPortfolio();
-        if (items && items.length > 0) {
+        if (items && items.length > 0 && !items.some(it => it.location?.includes('Florida') || it.location?.includes('Miami') || it.title?.includes('Sunlit'))) {
           setPortfolioItems(items);
         }
       } catch (err) {

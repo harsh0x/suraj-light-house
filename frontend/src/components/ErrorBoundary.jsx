@@ -71,11 +71,11 @@ export default class ErrorBoundary extends React.Component {
 
             {/* Heading & Brand Themed Copy */}
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#FFF4D2] via-[#FBD38D] to-[#E2A03F] drop-shadow-[0_2px_15px_rgba(245,158,11,0.4)] mb-3">
-              Oops! We Experienced a Technical Blackout
+              Looks Like The Lights Went Out Here
             </h1>
 
             <p className="text-xs sm:text-sm text-amber-200/75 font-light tracking-wide leading-relaxed max-w-md mb-8">
-              An unexpected surge interrupted the illumination. Our team is restoring the power grid. Please refresh to restore the celebration.
+              An unexpected power fluctuation interrupted the illumination. Our chief electrical engineers are restoring the grid. Refresh below to bring the royal lights back on.
             </p>
 
             {/* Action Buttons */}
