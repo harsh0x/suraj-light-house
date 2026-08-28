@@ -7,21 +7,21 @@ const LUXURY_EASE = [0.25, 1, 0.5, 1];
 const ABOUT_SLIDES = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=85",
+    image: "/assets/heritage-lotus-stage.jpg",
     sub: "✦ Passion, Engineering & Royal Grandeur ✦",
     title: "The Visionaries Behind The Light",
     desc: "For decades, Suraj Light House (Suraj Light's Ranthambore) has been Rajasthan's premier mastercraft event lighting, heritage tenting, and theatrical decor company."
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=2000&q=85",
+    image: "/assets/heritage-fountain-stage.jpg",
     sub: "✦ Masters of Theatrical Illumination ✦",
     title: "Crafting Luminous Spectacles",
     desc: "Transforming open grounds, wildlife resorts, and royal fort courtyards into breathtaking wonderlands with crystal chandeliers and fairy light canopies."
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=2000&q=85",
+    image: "/assets/heritage-palace-stage.jpg",
     sub: "✦ Industrial Grade Reliability ✦",
     title: "Fail-Safe Heavy Power Grids",
     desc: "Equipped with dedicated silent diesel generators, aluminum truss architecture, and computerized DMX consoles for zero-downtime celebrations."
@@ -127,7 +127,7 @@ export default function AboutUsPage({ onOpenBooking }) {
             >
               <div className="relative overflow-hidden rounded-2xl shadow-2xl border-4 border-white transform hover:scale-[1.02] transition duration-700">
                 <img 
-                  src="https://images.unsplash.com/photo-1517263904808-5dc91e3e7044?auto=format&fit=crop&w=1200&q=85" 
+                  src="/assets/heritage-palace-stage.jpg" 
                   alt="Suraj Light House Royal Chandelier Setup" 
                   className="w-full h-[520px] sm:h-[600px] object-cover object-center"
                 />

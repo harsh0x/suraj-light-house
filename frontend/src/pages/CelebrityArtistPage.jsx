@@ -6,7 +6,7 @@ const LUXURY_EASE = [0.25, 1, 0.5, 1];
 
 const roster = [
   {
-    image: 'https://images.unsplash.com/photo-photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/04bf0b1c6eb47feba6d01048b603293c.jpg',
     tag: 'Red Carpet & Stages',
     icon: 'fa-solid fa-film',
     title: 'Celebrity Stage & Trussing',
@@ -14,7 +14,7 @@ const roster = [
     highlight: 'Box Truss & Rigging'
   },
   {
-    image: 'https://images.unsplash.com/photo-photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/25ace1e7c3fbb3df2814920e8a4fc7f0.jpg',
     tag: 'Concert Experience',
     icon: 'fa-solid fa-microphone',
     title: 'Live Band & Vocalist Lighting',
@@ -22,7 +22,7 @@ const roster = [
     highlight: 'DMX Spot & Beams'
   },
   {
-    image: 'https://images.unsplash.com/photo-photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/27a5e8a51e99073fdd959bdb7a456bbf.jpg',
     tag: 'EDM & Laser Cues',
     icon: 'fa-solid fa-compact-disc',
     title: 'DJ Truss & Moving Heads',
@@ -30,7 +30,7 @@ const roster = [
     highlight: 'Laser & Moving Heads'
   },
   {
-    image: 'https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/769b6a2c2a7199080b009a014956bd12.jpg',
     tag: 'Classical Grandeur',
     icon: 'fa-solid fa-music',
     title: 'Folk & Symphony Ambiance',
@@ -38,7 +38,7 @@ const roster = [
     highlight: 'Heritage Gold Wash'
   },
   {
-    image: 'https://images.unsplash.com/photo-photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/8a660f910a9795b965d2aadb619b83e0.jpg',
     tag: 'Special FX',
     icon: 'fa-solid fa-wand-magic-sparkles',
     title: 'Cold Pyros, Fog & Confetti',
@@ -46,7 +46,7 @@ const roster = [
     highlight: 'Cold Pyros & FX'
   },
   {
-    image: 'https://images.unsplash.com/photo-photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/a0c329f7956fb9ff501d284d5948d4ae.jpg',
     tag: 'Dedicated Power',
     icon: 'fa-solid fa-shield-halved',
     title: 'Rider Technical Compliance',
@@ -56,23 +56,23 @@ const roster = [
 ];
 
 const galleryImages = [
-  { url: 'https://images.unsplash.com/photo-photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80', title: 'Concert Stage Trussing' },
-  { url: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=800&q=80', title: 'Playback Singer Spotlight' },
-  { url: 'https://images.unsplash.com/photo-photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80', title: 'Royal Folk Illumination' },
-  { url: 'https://images.unsplash.com/photo-photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80', title: 'Cold Sparkler Pyro FX' }
+  { url: '/assets/a29e0332418ba85517134a9dfd3c597b.jpg', title: 'Live Headline Concert Rigging' },
+  { url: '/assets/c6d73bda66c9049138873f62548e4505.jpg', title: 'Illuminated Stage & Confetti Blast' },
+  { url: '/assets/c70c0f3d7828169baa4bf1e894b7c51c.jpg', title: 'Acoustic Band Festoon Stage' },
+  { url: '/assets/d9d1e8d007790aec01a5b0813af2a7fc.jpg', title: 'Laser Geometric Sangeet Production' }
 ];
 
 const CELEBRITY_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-photo-1587474260584-136574528ed5?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/portfolio-dj-dance-sangeet.jpg',
     sub: '✦ Concert Grade Stagecraft ✦',
     title: 'Stage Trussing & Special FX Production',
     desc: 'Suraj Light House delivers heavy aluminum box trussing, sharpie moving head beams, lasers, and cold pyros for top-tier artist performances and grand celebrations across Rajasthan.'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-photo-1590059390046-5544719b0270?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/service-cold-pyro-fog-aisle.jpg',
     sub: '✦ High-Octane After-Parties ✦',
     title: 'Electrifying Sangeet Light Shows',
     desc: 'Computerized intelligent DMX consoles, moving heads, cryogenic fog, and concert-grade acoustics designed to keep your audience enthralled until sunrise.'

@@ -9,7 +9,7 @@ const destinationsInIndia = [
     id: 'ranthambore',
     city: 'Ranthambore & Sawai Madhopur',
     tag: 'Royal Wilderness & Heritage Forts',
-    image: 'https://images.unsplash.com/photo-photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-ranthambore-resorts.jpg',
     desc: 'Our home territory. Grand fairy light canopies, royal shamiyana dining pavilions, and crystal chandeliers set against the majestic backdrop of Ranthambore Fort and jungle resorts.',
     venues: ['Nahargarh Palace', 'Six Senses Fort Barwara', 'The Oberoi Vanyavilas', 'Sawai Vilas'],
     idealSeason: 'October to March',
@@ -20,7 +20,7 @@ const destinationsInIndia = [
     id: 'jaipur',
     city: 'Jaipur, Rajasthan',
     tag: 'Regal Palaces & Heritage Forts',
-    image: 'https://images.unsplash.com/photo-photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-fountain-stage.jpg',
     desc: 'Echoing the grandeur of Maharajas with palace rampart floodlighting, massive stage trussing, and royal Mughal garden shamiyanas.',
     venues: ['Rambagh Palace', 'Jai Mahal Palace', 'Fairmont Jaipur', 'Samode Palace'],
     idealSeason: 'October to April',
@@ -31,7 +31,7 @@ const destinationsInIndia = [
     id: 'udaipur',
     city: 'Udaipur, Rajasthan',
     tag: 'City of Lakes & Palaces',
-    image: 'https://images.unsplash.com/photo-photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-rajasthan-palaces.jpg',
     desc: 'Fairytale lakefront illumination, shimmering water reflection beams, and opulent courtyard chandeliers fit for royalty.',
     venues: ['Taj Lake Palace', 'The Leela Palace', 'Jagmandir Island', 'Oberoi Udaivilas'],
     idealSeason: 'October to March',
@@ -42,7 +42,7 @@ const destinationsInIndia = [
     id: 'jodhpur',
     city: 'Jodhpur, Rajasthan',
     tag: 'Sandstone Citadels',
-    image: 'https://images.unsplash.com/photo-1609137144822-48f574d6c41b?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/mosaic-grand-tier-chandelier.jpg',
     desc: 'Dramatic golden-yellow sandstone architecture, amber floodlighting, and imperial shamiyana banquet canopies.',
     venues: ['Umaid Bhawan Palace', 'Ajit Bhawan', 'Indana Palace', 'Fort Khejarla'],
     idealSeason: 'October to March',
@@ -121,14 +121,14 @@ const indianPackages = [
 const DESTINATION_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/hero-canopy-lighting.jpg',
     sub: '✦ Royal Rajasthan & Pan-India Destinations ✦',
     title: 'Grand Destination Event Lighting',
     desc: 'From the royal tiger heartland of Ranthambore to majestic forts in Jaipur, Udaipur, and Jodhpur, Suraj Light House delivers majestic lighting, tenting, and power grids across India.'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/hero-facade-lighting.jpg',
     sub: '✦ Forts, Palaces & Luxury Wilderness ✦',
     title: 'Illuminating Landmark Properties',
     desc: 'Flawless electrical infrastructure, custom crystal chandelier canopies, and architectural lighting engineered for India’s finest heritage venues.'

@@ -5,59 +5,65 @@ import { Link } from 'react-router-dom';
 const LUXURY_EASE = [0.25, 1, 0.5, 1];
 
 const filterCategories = [
-  { id: 'decoration-stage', name: 'Stage & Mandap PAR Lighting' },
-  { id: 'par-wash-truss', name: 'PAR Lights & Moving Beams' },
-  { id: 'silent-generators', name: 'Silent Generators & Gensets' },
-  { id: 'mi-bars-kinetic', name: 'MI Bars & Kinetic Light Balls' },
-  { id: 'chandeliers-tents', name: 'Crystal Chandeliers & Tenting' },
-  { id: 'rise-cloud-fx', name: 'Rise Cloud Low Fog & Pyros' }
+  { id: 'all', name: 'All Showcases (30)' },
+  { id: 'decoration-stage', name: 'Stage & Mandap Decor' },
+  { id: 'par-wash-truss', name: 'Concert Truss & Beams' },
+  { id: 'chandeliers-tents', name: 'Crystal Chandeliers & Tents' },
+  { id: 'silent-generators', name: 'Power Grids & Consoles' },
+  { id: 'rise-cloud-fx', name: 'Cold Pyros & Low Fog FX' }
 ];
 
 const galleryItems = [
-  // Stage & Mandap PAR Lighting
-  { id: 1, category: 'decoration-stage', title: 'Flower Wall PAR Light Wash & Stage Mandap', location: 'Ranthambore Palace Grounds', url: 'https://images.unsplash.com/photo-photo-1517263904808-5dc91e3e7044?auto=format&fit=crop&w=1400&q=85' },
-  { id: 2, category: 'decoration-stage', title: 'Illuminated Mandap with Crystal Drops & Golden Wash', location: 'Nahargarh Palace Courtyard', url: 'https://images.unsplash.com/photo-photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=1400&q=85' },
-  { id: 3, category: 'decoration-stage', title: 'Red Drape Peacock Floral Entrance Archway', location: 'Sawai Vilas Resort', url: 'https://images.unsplash.com/photo-photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1400&q=85' },
-  { id: 4, category: 'decoration-stage', title: 'Ambient Welcome Board & Fairy Light Pathway', location: 'Six Senses Fort Barwara', url: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1400&q=85' },
+  // 1. Stage & Mandap Decor
+  { id: 1, category: 'decoration-stage', title: 'Illuminated Lotus Backdrop & Floral Arched Stage', location: 'Ranthambore Palace Grounds', url: '/assets/heritage-lotus-stage.jpg' },
+  { id: 2, category: 'decoration-stage', title: 'Fountain Lawn Stage with Floral Arch Illumination', location: 'Sawai Madhopur Grand Estate', url: '/assets/heritage-fountain-stage.jpg' },
+  { id: 3, category: 'decoration-stage', title: 'Grand Royal Palace Facade & Candelabra Mandap Stage', location: 'Nahargarh Palace Courtyard', url: '/assets/heritage-palace-stage.jpg' },
+  { id: 4, category: 'decoration-stage', title: 'White Wisteria Arches with Neon & Candelabras', location: 'Six Senses Fort Barwara', url: '/assets/service-hanging-wisteria-arches.jpg' },
+  { id: 5, category: 'decoration-stage', title: 'Illuminated Varmala Flower Bridge & Confetti Shower', location: 'The Oberoi Vanyavilas', url: '/assets/service-varmala-flower-bridge.jpg' },
+  { id: 6, category: 'decoration-stage', title: 'Bougainvillea Heritage Archway & Vintage Pendants', location: 'Sawai Vilas Resort', url: '/assets/portfolio-bougainvillea-arch-swing.jpg' },
+  { id: 7, category: 'decoration-stage', title: 'Royal Crimson Rose Velvet Pavilion', location: 'Fairmont Jaipur Ambiance', url: '/assets/portfolio-royal-red-rose-palace-stage.jpg' },
 
-  // PAR Lights & Moving Beams
-  { id: 5, category: 'par-wash-truss', title: 'High-Power LED PAR 64 Stage Floor Uplights', location: 'Fairmont Jaipur Ballroom', url: 'https://images.unsplash.com/photo-photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=1400&q=85' },
-  { id: 6, category: 'par-wash-truss', title: 'Heavy Aluminum Box Truss with Sharpy Moving Heads', location: 'Grand Sangeet Stage Arena', url: 'https://images.unsplash.com/photo-photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=1400&q=85' },
-  { id: 7, category: 'par-wash-truss', title: 'Concert RGBW Stage Wash Floodlights', location: 'Ranthambore Musical Night', url: 'https://images.unsplash.com/photo-photo-1468359601543-843bfaef291a?auto=format&fit=crop&w=1400&q=85' },
-  { id: 8, category: 'par-wash-truss', title: 'DMX Computerized Beam Synchronized Light Show', location: 'Rajasthan Convention Center', url: 'https://images.unsplash.com/photo-photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1400&q=85' },
+  // 2. Concert Truss & Moving Beams
+  { id: 8, category: 'par-wash-truss', title: 'High-Power Aluminum Box Concert Truss & Sharpy Beams', location: 'Mega Sangeet Arena', url: '/assets/04bf0b1c6eb47feba6d01048b603293c.jpg' },
+  { id: 9, category: 'par-wash-truss', title: 'Dynamic Spotlight Tracking & Live Band Stagecraft', location: 'Royal Concert Lawn', url: '/assets/25ace1e7c3fbb3df2814920e8a4fc7f0.jpg' },
+  { id: 10, category: 'par-wash-truss', title: 'DMX Computerized Beam Synchronized Light Show', location: 'Headline Sangeet Night', url: '/assets/27a5e8a51e99073fdd959bdb7a456bbf.jpg' },
+  { id: 11, category: 'par-wash-truss', title: 'Live Headline Concert Rigging & Multi-Tier Stage', location: 'Nahargarh Amphitheatre', url: '/assets/a29e0332418ba85517134a9dfd3c597b.jpg' },
+  { id: 12, category: 'par-wash-truss', title: 'High-Energy DJ Concert Sangeet Production', location: 'Rajasthan Convention Grounds', url: '/assets/portfolio-dj-dance-sangeet.jpg' },
+  { id: 13, category: 'par-wash-truss', title: 'Golden Truss Qawwali & Sufi Symphony Stage', location: 'Palace Courtyard Live Night', url: '/assets/service-sangeet-truss-gold-stage.jpg' },
+  { id: 14, category: 'par-wash-truss', title: 'Geometric Pattern Laser & Beam Stage Mapping', location: 'VIP Gala Stage Arena', url: '/assets/d9d1e8d007790aec01a5b0813af2a7fc.jpg' },
 
-  // Silent Generators & Gensets
-  { id: 9, category: 'silent-generators', title: 'Soundproof Cummins Silent Diesel Generator Set', location: 'Ranthambore Outdoor Event Fleet', url: 'https://images.unsplash.com/photo-photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1400&q=85' },
-  { id: 10, category: 'silent-generators', title: 'Heavy Commercial Power DG Genset on Site', location: 'Six Senses Fort Barwara Power Grid', url: 'https://images.unsplash.com/photo-photo-1609137144822-48f574d6c41b?auto=format&fit=crop&w=1400&q=85' },
-  { id: 11, category: 'silent-generators', title: '3-Phase Armored Power Distribution Panel Grid', location: 'Palace Amphitheatre Substation', url: 'https://images.unsplash.com/photo-photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1400&q=85' },
-  { id: 12, category: 'silent-generators', title: 'Heavy Duty Event Power Redundancy Grid', location: 'Grand Royal Lawn Setup', url: 'https://images.unsplash.com/photo-photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=85' },
+  // 3. Crystal Chandeliers & Tenting
+  { id: 15, category: 'chandeliers-tents', title: 'Grand Floral Archway Crystal Chandelier Dining Walkway', location: 'Nahargarh Palace Main Courtyard', url: '/assets/heritage-dining-chandelier-arches.jpg' },
+  { id: 16, category: 'chandeliers-tents', title: 'Suspended Crystal Chandelier Velvet Lawn', location: 'Sawai Vilas Luxury Lawn', url: '/assets/mosaic-floral-arch-chandeliers.jpg' },
+  { id: 17, category: 'chandeliers-tents', title: 'Royal Bespoke Banquet & Crystal Chandeliers', location: 'Ranthambore Luxury Grounds', url: '/assets/standard-bespoke-banquet.jpg' },
+  { id: 18, category: 'chandeliers-tents', title: 'Handcrafted Royal Shamiyana & Scalloped Canopy', location: 'Heritage Fort Courtyard', url: '/assets/standard-royal-tenting.jpg' },
+  { id: 19, category: 'chandeliers-tents', title: 'Multi-Tiered Crystal Drop Chandeliers & Flora', location: 'Grand Ballroom Pavilion', url: '/assets/mosaic-grand-tier-chandelier.jpg' },
+  { id: 20, category: 'chandeliers-tents', title: 'Radiating Drapes & 360-Degree Canopy Fairy Lights', location: 'Fairmont Courtyard Canopy', url: '/assets/commitment-canopy-chandelier.jpg' },
+  { id: 21, category: 'chandeliers-tents', title: 'Blue Cabana Fairy Lights & Outdoor Dining Pavilion', location: 'Six Senses Poolside Garden', url: '/assets/about-blue-cabana.jpg' },
+  { id: 22, category: 'chandeliers-tents', title: 'Gold Sequin Table & Grand Crystal Chandelier Arrays', location: 'VIP Wedding Gala', url: '/assets/about-gold-chandelier.jpg' },
 
-  // MI Bars & Kinetic Light Balls
-  { id: 13, category: 'mi-bars-kinetic', title: 'Vertical DMX Pixel LED Tubes on Live Stage', location: 'Mega Sangeet Stage Setup', url: 'https://images.unsplash.com/photo-photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=85' },
-  { id: 14, category: 'mi-bars-kinetic', title: 'Motorized Dynamic Kinetic Light Spheres', location: 'Royal Grand Ballroom Ceiling', url: 'https://images.unsplash.com/photo-photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1400&q=85' },
-  { id: 15, category: 'mi-bars-kinetic', title: 'Moving MI Bar Pixel Lighting Chases', location: 'Celebrity DJ Concert Stage', url: 'https://images.unsplash.com/photo-photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=85' },
-  { id: 16, category: 'mi-bars-kinetic', title: '3D Suspended Kinetic Ball Matrix Installation', location: 'VIP Gala Night Lounge', url: 'https://images.unsplash.com/photo-photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1400&q=85' },
+  // 4. Power Grids & Generators
+  { id: 23, category: 'silent-generators', title: 'Soundproof Commercial DG Silent Generator Depot', location: 'Sawai Madhopur Fleet Depot', url: '/assets/a0c329f7956fb9ff501d284d5948d4ae.jpg' },
+  { id: 24, category: 'silent-generators', title: 'Theatrical Sound & Multi-Channel Light Console Station', location: 'Ranthambore Live Control', url: '/assets/portfolio-outdoor-mandap-mixer.jpg' },
+  { id: 25, category: 'silent-generators', title: 'Palace Facade Amber Illumination & 3-Phase Grid', location: 'Ranthambore Fort Ramparts', url: '/assets/hero-facade-lighting.jpg' },
 
-  // Crystal Chandeliers & Tenting
-  { id: 17, category: 'chandeliers-tents', title: 'Grand 40-Chandelier Suspended Open Canopy', location: 'Nahargarh Palace Main Courtyard', url: 'https://images.unsplash.com/photo-photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1400&q=85' },
-  { id: 18, category: 'chandeliers-tents', title: 'Multi-Tiered Crystal Chandelier Dining Pavilion', location: 'Sawai Vilas Luxury Lawn', url: 'https://images.unsplash.com/photo-photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1400&q=85' },
-  { id: 19, category: 'chandeliers-tents', title: 'Waterproof German Hangar & Handcrafted Shamiyana', location: 'Ranthambore Luxury Grounds', url: 'https://images.unsplash.com/photo-photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1400&q=85' },
-  { id: 20, category: 'chandeliers-tents', title: 'Golden Silk Ceiling Drapes with Festoon Lights', location: 'Heritage Fort Courtyard', url: 'https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1400&q=85' },
-
-  // Rise Cloud Low Fog & Pyros
-  { id: 21, category: 'rise-cloud-fx', title: 'Thick White Dry Ice Low Fog Rise Cloud on Stage', location: 'Royal Couple Grand Dance', url: 'https://images.unsplash.com/photo-photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1400&q=85' },
-  { id: 22, category: 'rise-cloud-fx', title: 'Sparkular Cold Pyrotechnic Fountain Grand Entry', location: 'Nahargarh Main Amphitheatre', url: 'https://images.unsplash.com/photo-photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1400&q=85' },
-  { id: 23, category: 'rise-cloud-fx', title: 'Cryogenic CO2 Jets & Stage Fog Special FX', location: 'Sangeet Headline Concert', url: 'https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1400&q=85' },
-  { id: 24, category: 'rise-cloud-fx', title: '10,000 Fairy Light Canopy Starlight Tunnel', location: 'The Oberoi Vanyavilas Garden', url: 'https://images.unsplash.com/photo-photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1400&q=85' }
+  // 5. Cold Pyros, Fog & Ambient Special FX
+  { id: 26, category: 'rise-cloud-fx', title: 'Stage Sparkular Cold Pyrotechnic Fountain Grand Entry', location: 'Nahargarh Main Amphitheatre', url: '/assets/8a660f910a9795b965d2aadb619b83e0.jpg' },
+  { id: 27, category: 'rise-cloud-fx', title: 'Thick White Dry Ice Low Cloud Fog Walkway', location: 'Royal Couple Grand Aisle', url: '/assets/service-cold-pyro-fog-aisle.jpg' },
+  { id: 28, category: 'rise-cloud-fx', title: 'Illuminated Leaf Archway Light Tunnel', location: 'Sawai Madhopur Palace Entrance', url: '/assets/mosaic-illuminated-arch-tunnel.jpg' },
+  { id: 29, category: 'rise-cloud-fx', title: 'Electric Blue Neon Geometric Pathway Tunnel', location: 'After-Party Nightclub Corridor', url: '/assets/about-neon-tunnel.jpg' },
+  { id: 30, category: 'rise-cloud-fx', title: 'Illuminated Glass Floral Runway & Tree Floodlights', location: 'The Oberoi Vanyavilas Garden', url: '/assets/service-glass-floral-aisle.jpg' }
 ];
 
 export default function GalleryPage() {
-  const [selectedCategory, setSelectedCategory] = useState('decoration-stage');
+  const [selectedCategory, setSelectedCategory] = useState('all');
   const [lightboxIndex, setLightboxIndex] = useState(null);
   const [isSlideshow, setIsSlideshow] = useState(false);
   const [isZoomed, setIsZoomed] = useState(false);
 
-  const filteredItems = galleryItems.filter(item => item.category === selectedCategory);
+  const filteredItems = selectedCategory === 'all' 
+    ? galleryItems 
+    : galleryItems.filter(item => item.category === selectedCategory);
 
   useEffect(() => {
     let timer = null;
@@ -145,33 +151,34 @@ export default function GalleryPage() {
         </section>
 
         {/* Gallery Grid */}
-        <section className="py-16 sm:py-20 px-4 sm:px-6 md:px-12 lg:px-16 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8">
+        <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-10 lg:px-12 max-w-[1520px] mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
             {filteredItems.map((item, idx) => (
               <motion.div
                 key={item.id}
-                initial={{ opacity: 0, scale: 0.95 }}
+                initial={{ opacity: 0, scale: 0.96 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: idx * 0.05 }}
+                viewport={{ once: true, margin: "50px" }}
+                transition={{ duration: 0.4, delay: (idx % 8) * 0.04 }}
                 onClick={() => setLightboxIndex(idx)}
-                className="group relative rounded-3xl overflow-hidden shadow-md border border-rose-200/80 bg-white cursor-pointer h-80 sm:h-96"
+                className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-2xl border border-rose-200/80 bg-neutral-900 cursor-pointer h-60 sm:h-68 md:h-72 transition duration-500"
               >
                 <img 
                   src={item.url} 
                   alt={item.title} 
-                  className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-108 transition duration-700 brightness-[0.92] group-hover:brightness-100"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent opacity-85 group-hover:opacity-100 transition-opacity p-6 sm:p-8 flex flex-col justify-end">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#FFCCD3] block mb-1">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent opacity-90 group-hover:opacity-100 transition-opacity p-4 sm:p-5 flex flex-col justify-end">
+                  <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-[#FFCCD3] block mb-1">
                     {item.location}
                   </span>
-                  <h3 className="font-serif text-lg sm:text-2xl text-white font-bold leading-snug">
+                  <h3 className="font-serif text-sm sm:text-base md:text-lg text-white font-bold leading-snug line-clamp-2 drop-shadow-sm">
                     {item.title}
                   </h3>
-                  <div className="mt-3 flex items-center gap-2 text-xs text-rose-200 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <span>Click to view in full HD</span>
-                    <i className="fa-solid fa-arrow-right text-[10px]"></i>
+                  <div className="mt-2 flex items-center gap-1.5 text-[11px] text-rose-200 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span>View HD</span>
+                    <i className="fa-solid fa-arrow-right text-[9px]"></i>
                   </div>
                 </div>
               </motion.div>

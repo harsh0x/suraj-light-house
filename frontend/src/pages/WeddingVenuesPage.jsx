@@ -22,7 +22,7 @@ const venuesList = [
     capacity: '200 - 1500 Guests',
     rooms: '100+ Royal Rooms & Haveli Courtyards',
     spaces: 'Hathi Kund, Lancer Lawns, Amphitheatre, Mughal Courtyard',
-    image: 'https://images.unsplash.com/photo-photo-1586105251261-72a756497a11?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-palace-stage.jpg',
     tag: 'Ranthambore Flagship',
     priceCategory: 'Heritage Fort Luxury'
   },
@@ -35,7 +35,7 @@ const venuesList = [
     capacity: '150 - 600 Guests',
     rooms: '48 Palatial Suites',
     spaces: 'Zenana Mahal Lawns, Barwara Courtyard, Pool Pavilion',
-    image: 'https://images.unsplash.com/photo-1590059390046-5544719b0270?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/hero-royal-stage.jpg',
     tag: 'Celebrity Fort Sanctuary',
     priceCategory: 'Ultra Luxury Citadel'
   },
@@ -48,7 +48,7 @@ const venuesList = [
     capacity: '80 - 300 Guests',
     rooms: '25 Luxury Tents',
     spaces: 'Mango Orchard, Lily Pond Lawn, Amphitheatre',
-    image: 'https://images.unsplash.com/photo-photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-lotus-stage.jpg',
     tag: 'Jungle Luxury Pavilion',
     priceCategory: '5-Star Wildlife Resort'
   },
@@ -61,7 +61,7 @@ const venuesList = [
     capacity: '100 - 500 Guests',
     rooms: '60 Luxury Villas',
     spaces: 'Main Pool Courtyard, Central Banquet Lawn, Terrace',
-    image: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-sawai-madhopur.jpg',
     tag: 'Exclusive Villa Retreat',
     priceCategory: 'Boutique Luxury'
   },
@@ -74,7 +74,7 @@ const venuesList = [
     capacity: '200 - 1500 Guests',
     rooms: '78 Luxury Suites',
     spaces: 'Mughal Lawns, Oriental Garden, Jaigarh Hall',
-    image: 'https://images.unsplash.com/photo-photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-rajasthan-palaces.jpg',
     tag: 'Jewel of Jaipur',
     priceCategory: 'Ultra Luxury Palace'
   },
@@ -87,7 +87,7 @@ const venuesList = [
     capacity: '100 - 500 Guests',
     rooms: '80 Lake-View Rooms & Royal Suites',
     spaces: 'Pichola Lawns, Guava Garden, Marwar Hall',
-    image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-ranthambore-resorts.jpg',
     tag: 'Iconic Lakefront',
     priceCategory: 'Ultra Luxury'
   },
@@ -100,7 +100,7 @@ const venuesList = [
     capacity: '100 - 600 Guests',
     rooms: '43 Heritage Suites',
     spaces: 'Sheesh Mahal, Darbar Hall, Rooftop Infinity Pool',
-    image: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-dining-chandelier-arches.jpg',
     tag: 'Mirrored Sheesh Mahal',
     priceCategory: 'Heritage Royalty'
   },
@@ -113,7 +113,7 @@ const venuesList = [
     capacity: '250 - 2000 Guests',
     rooms: '245 Royal Rooms',
     spaces: 'Central Courtyard, Grand Ballroom, Aravalli Lawns',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80',
+    image: '/assets/heritage-fountain-stage.jpg',
     tag: 'Palatial Amphitheatre',
     priceCategory: 'Luxury Palace'
   }

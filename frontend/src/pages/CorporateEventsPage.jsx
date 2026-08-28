@@ -6,7 +6,7 @@ const LUXURY_EASE = [0.25, 1, 0.5, 1];
 
 const services = [
   {
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/3f0184c57bbdd5c97883152dd77640fe.jpg',
     tag: 'Black Tie & Awards',
     icon: 'fa-solid fa-trophy',
     title: 'Annual Galas & Awards',
@@ -14,7 +14,7 @@ const services = [
     highlight: 'Stage Truss & Lighting'
   },
   {
-    image: 'https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/4594b6d731df4d2893f42a255ac802ad.jpg',
     tag: 'Summits & Conventions',
     icon: 'fa-solid fa-microphone-lines',
     title: 'Conferences & Global Summits',
@@ -22,7 +22,7 @@ const services = [
     highlight: 'Heavy Power & Rigging'
   },
   {
-    image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/65e8b70f6bc7a641731be823a95a3a51.jpg',
     tag: 'Brand Unveilings',
     icon: 'fa-solid fa-rocket',
     title: 'Product Launches & Activations',
@@ -30,7 +30,7 @@ const services = [
     highlight: 'DMX Lighting Shows'
   },
   {
-    image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/9dd96d5eae7c84d6b469fa5614738120.jpg',
     tag: 'Private Offsites',
     icon: 'fa-solid fa-gem',
     title: 'Executive Retreats in Ranthambore',
@@ -38,7 +38,7 @@ const services = [
     highlight: 'Ranthambore Venues'
   },
   {
-    image: 'https://images.unsplash.com/photo-photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/dfb89a8f304d3fb95c9b4327e22ca19f.jpg',
     tag: 'Concert Grade Tech',
     icon: 'fa-solid fa-sliders',
     title: 'End-to-End AV & Heavy Power',
@@ -46,7 +46,7 @@ const services = [
     highlight: 'Zero Downtime Power'
   },
   {
-    image: 'https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/fc546ecd57fe36c2f0328c2d529a9029.jpg',
     tag: 'Grand Pavilions',
     icon: 'fa-solid fa-campground',
     title: 'Corporate Tenting & Hangars',
@@ -56,30 +56,30 @@ const services = [
 ];
 
 const galleryImages = [
-  { url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80', title: 'Leadership Summit Stage' },
-  { url: 'https://images.unsplash.com/photo-photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80', title: 'Grand Ballroom Awards' },
-  { url: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80', title: 'VIP Banquet Lighting' },
-  { url: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80', title: 'Brand Launch Stagecraft' }
+  { url: '/assets/service-glass-floral-aisle.jpg', title: 'Illuminated Glass Runway' },
+  { url: '/assets/about-gold-chandelier.jpg', title: 'Grand Crystal Chandelier Dinner' },
+  { url: '/assets/standard-royal-tenting.jpg', title: 'Royal Corporate Shamiyana' },
+  { url: '/assets/mosaic-floral-arch-chandeliers.jpg', title: 'Brand Launch Stagecraft' }
 ];
 
 const CORPORATE_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/hero-royal-stage.jpg',
     sub: '✦ Executive Excellence & Theatrical Production ✦',
     title: 'Corporate Events & Summits',
     desc: 'From multinational leadership conclaves and high-profile product unveilings to annual award galas, Suraj Light House delivers flawless lighting, heavy trussing, and generator power across Rajasthan.'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/standard-bespoke-banquet.jpg',
     sub: '✦ Grand Gala Dinners & Award Ceremonies ✦',
     title: 'Opulent Brand Milestones',
     desc: 'Curating distinguished evenings of recognition, crystal chandelier dining canopies, and cinematic stage productions that resonate with industry leaders.'
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/service-sangeet-truss-gold-stage.jpg',
     sub: '✦ State-of-the-Art Production & AV ✦',
     title: 'Immersive Product Reveals',
     desc: 'Transforming corporate grounds with high-power beam sharpies, computerized light consoles, and synchronised effects engineered for maximum impact.'

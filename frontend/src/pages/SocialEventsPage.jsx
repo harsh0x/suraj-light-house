@@ -6,7 +6,7 @@ const LUXURY_EASE = [0.25, 1, 0.5, 1];
 
 const categories = [
   {
-    image: 'https://images.unsplash.com/photo-photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/1d9598093d5b08479fd1479fc82289c9.jpg',
     tag: 'Milestone Celebrations',
     icon: 'fa-solid fa-cake-candles',
     title: 'Grand Birthday & Jubilee Lights',
@@ -14,7 +14,7 @@ const categories = [
     highlight: 'Warm Ambient Lighting'
   },
   {
-    image: 'https://images.unsplash.com/photo-photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/39a19d8615c130c9d7af5e179a435b11.jpg',
     tag: 'Romantic Banquets',
     icon: 'fa-solid fa-heart',
     title: 'Anniversaries & Vow Renewals',
@@ -22,7 +22,7 @@ const categories = [
     highlight: 'Chandelier Canopies'
   },
   {
-    image: 'https://images.unsplash.com/photo-photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/3f9d2e3b8e4adf3e96c6b2622f657a98.jpg',
     tag: 'Pastel High Tea',
     icon: 'fa-solid fa-baby-carriage',
     title: 'Baby Showers & Family Feasts',
@@ -30,7 +30,7 @@ const categories = [
     highlight: 'Heritage Tents'
   },
   {
-    image: 'https://images.unsplash.com/photo-photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/54b3e73e0b382614997f11e66b307eb1.jpg',
     tag: 'Pre-Wedding Radiance',
     icon: 'fa-solid fa-ring',
     title: 'Sangeet Nights & Ring Ceremonies',
@@ -38,7 +38,7 @@ const categories = [
     highlight: 'Concert Grade Truss'
   },
   {
-    image: 'https://images.unsplash.com/photo-photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/fa64d71888101bf695db413b83bdc608.jpg',
     tag: 'Alfresco Nights',
     icon: 'fa-solid fa-martini-glass-citrus',
     title: 'Cocktail Soirées & Lounges',
@@ -46,7 +46,7 @@ const categories = [
     highlight: 'Festoon & Lanterns'
   },
   {
-    image: 'https://images.unsplash.com/photo-1498931299472-f7a63a5a1cfa?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/8e07b50a6ebf4f99fc4df90dbc39fae6.jpg',
     tag: 'Diwali & New Year',
     icon: 'fa-solid fa-wand-magic-sparkles',
     title: 'Holiday Galas & Festival Lights',
@@ -56,23 +56,23 @@ const categories = [
 ];
 
 const galleryImages = [
-  { url: 'https://images.unsplash.com/photo-photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80', title: 'Midnight Countdown Lights' },
-  { url: 'https://images.unsplash.com/photo-photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80', title: 'Bespoke Chandelier Dinner' },
-  { url: 'https://images.unsplash.com/photo-photo-1561501900-3701fa6a0864?auto=format&fit=crop&w=800&q=80', title: 'Private Courtyard Soirée' },
-  { url: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80', title: 'Grand Sangeet Production' }
+  { url: '/assets/78e92216323ea4f09b5f72cc1766f1d7.jpg', title: 'Illuminated Floral Archway Tunnel' },
+  { url: '/assets/9a7668c08a3ba0c9629994203961df8a.jpg', title: 'Grand Floral Chandelier Pavilion' },
+  { url: '/assets/b292f823f1bf31a1263fe82e6ea284fa.jpg', title: 'Live Sangeet DJ Production' },
+  { url: '/assets/heritage-dining-chandelier-arches.jpg', title: 'Floral Arch Crystal Chandelier Walkway' }
 ];
 
 const SOCIAL_SLIDES = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/service-sangeet-truss-gold-stage.jpg',
     sub: '✦ Unforgettable Personal Milestones ✦',
     title: 'Social Celebrations & Sangeet Nights',
     desc: 'From high-energy pre-wedding sangeets and anniversaries to milestone birthdays, Suraj Light House turns intimate and royal celebrations into magical experiences.'
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=2000&q=85',
+    image: '/assets/commitment-canopy-chandelier.jpg',
     sub: '✦ Alfresco Magic & Fairy Canopies ✦',
     title: 'Enchanted Courtyard Galas',
     desc: 'Drape your open-air soirées in ten thousand fairy lights, crystal chandelier arrays, and Rajasthani shamiyana pavilions that enchant every guest.'

@@ -53,7 +53,7 @@ const destinationsAbroad = [
     id: 'italy',
     country: 'Lake Como & Amalfi, Italy',
     tag: 'Lakeside Renaissance Villas',
-    image: 'https://images.unsplash.com/photo-photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80',
+    image: 'https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80',
     desc: 'Lakeside palazzos, cascading cliffside Mediterranean gardens, and candlelit courtyard chandelier banquets.',
     venues: ['Villa d’Este Lake Como', 'Villa Balbiano', 'Belmond Hotel Caruso', 'Villa Cimbrone'],
     idealSeason: 'May to October',
