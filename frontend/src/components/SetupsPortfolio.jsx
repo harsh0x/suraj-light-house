@@ -1,15 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { INITIAL_PORTFOLIO } from '../data/lightingData';
 
 export default function SetupsPortfolio({ portfolioItems = [], onOpenBooking, onImageClick }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   const rawItems = portfolioItems && portfolioItems.length > 0 ? portfolioItems : INITIAL_PORTFOLIO;
   const items = rawItems.some(it => it.title?.includes('Sunlit') || it.location?.includes('Florida'))
     ? INITIAL_PORTFOLIO 
     : rawItems;
   const currentItem = items[activeIndex] || items[0] || {};
+
+  // Auto-slide effect every 4.5 seconds (pauses when hovering over the carousel)
+  useEffect(() => {
+    if (!items || items.length <= 1 || isPaused) return;
+
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % items.length);
+    }, 4500);
+
+    return () => clearInterval(interval);
+  }, [items, isPaused]);
 
   return (
     <section id="portfolio" className="bg-white py-24 px-6 md:px-12 lg:px-16 overflow-hidden">
@@ -41,7 +53,9 @@ export default function SetupsPortfolio({ portfolioItems = [], onOpenBooking, on
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="relative bg-[#FAF6F0] rounded-3xl p-4 sm:p-8 shadow-xl border border-rose-100 mb-20"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+            className="relative bg-[#FAF6F0] rounded-3xl p-4 sm:p-8 shadow-xl border border-rose-100"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               
@@ -125,80 +139,6 @@ export default function SetupsPortfolio({ portfolioItems = [], onOpenBooking, on
             </div>
           </motion.div>
         )}
-
-        {/* "And more!" Feature Icons */}
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.8 }}
-          className="text-center pt-8"
-        >
-          <span className="font-serif text-xs sm:text-sm tracking-[0.25em] uppercase font-bold text-[#E63956] block mb-2">
-            ✦ Complete Capabilities ✦
-          </span>
-          <p className="font-sans text-xs sm:text-sm text-[#5A5255] max-w-xl mx-auto leading-relaxed mb-12 font-light">
-            From heavy structural trussing to crystal chandeliers and sound-attenuated power grids, we engineer total event peace of mind.
-          </p>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-10">
-            {/* 1 */}
-            <motion.div 
-              whileHover={{ y: -5 }}
-              className="flex flex-col items-center text-center group cursor-pointer"
-            >
-              <div className="w-20 h-20 rounded-full bg-rose-50 border border-rose-200 text-[#E63956] flex items-center justify-center text-2xl mb-4 group-hover:bg-[#E63956] group-hover:text-white transition duration-300 shadow-sm">
-                <i className="fa-solid fa-lightbulb"></i>
-              </div>
-              <h4 className="font-serif text-base sm:text-lg text-[#1A1A1A] font-bold mb-1">
-                Intelligent DMX Lighting
-              </h4>
-              <p className="text-[11px] text-[#5A5255]">Computerized moving heads & stage cues</p>
-            </motion.div>
-
-            {/* 2 */}
-            <motion.div 
-              whileHover={{ y: -5 }}
-              className="flex flex-col items-center text-center group cursor-pointer"
-            >
-              <div className="w-20 h-20 rounded-full bg-rose-50 border border-rose-200 text-[#E63956] flex items-center justify-center text-2xl mb-4 group-hover:bg-[#E63956] group-hover:text-white transition duration-300 shadow-sm">
-                <i className="fa-solid fa-gem"></i>
-              </div>
-              <h4 className="font-serif text-base sm:text-lg text-[#1A1A1A] font-bold mb-1">
-                Crystal Chandeliers
-              </h4>
-              <p className="text-[11px] text-[#5A5255]">Grand multi-tier crystal installations</p>
-            </motion.div>
-
-            {/* 3 */}
-            <motion.div 
-              whileHover={{ y: -5 }}
-              className="flex flex-col items-center text-center group cursor-pointer"
-            >
-              <div className="w-20 h-20 rounded-full bg-rose-50 border border-rose-200 text-[#E63956] flex items-center justify-center text-2xl mb-4 group-hover:bg-[#E63956] group-hover:text-white transition duration-300 shadow-sm">
-                <i className="fa-solid fa-campground"></i>
-              </div>
-              <h4 className="font-serif text-base sm:text-lg text-[#1A1A1A] font-bold mb-1">
-                Heritage Shamiyana & Tents
-              </h4>
-              <p className="text-[11px] text-[#5A5255]">Waterproof hangars & luxury silk tents</p>
-            </motion.div>
-
-            {/* 4 */}
-            <motion.div 
-              whileHover={{ y: -5 }}
-              className="flex flex-col items-center text-center group cursor-pointer"
-            >
-              <div className="w-20 h-20 rounded-full bg-rose-50 border border-rose-200 text-[#E63956] flex items-center justify-center text-2xl mb-4 group-hover:bg-[#E63956] group-hover:text-white transition duration-300 shadow-sm">
-                <i className="fa-solid fa-bolt"></i>
-              </div>
-              <h4 className="font-serif text-base sm:text-lg text-[#1A1A1A] font-bold mb-1">
-                Generator & Power Backup
-              </h4>
-              <p className="text-[11px] text-[#5A5255]">Heavy-duty silent DG sets & redundancy</p>
-            </motion.div>
-          </div>
-        </motion.div>
 
       </div>
     </section>

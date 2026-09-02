@@ -18,9 +18,9 @@ export const IMAGES = {
 
   // Core Equipment Services Cards
   service1: "/assets/service-hanging-wisteria-arches.jpg", // White Wisteria, Neon Arches & Candelabras
-  service2: "/assets/service-cold-pyro-fog-aisle.jpg", // Cold Spark Pyros & Low Cloud Fog Walkway
-  service3: "/assets/service-varmala-flower-bridge.jpg", // Illuminated Varmala Flower Bridge & Confetti
-  service4: "/assets/service-glass-floral-aisle.jpg", // Illuminated Glass Floral Runway & Trees
+  service2: "/assets/heritage-dining-chandelier-arches.jpg", // Royal Dining Arches & Crystal Chandeliers
+  service3: "/assets/heritage-lotus-stage.jpg", // Heritage Palace Mandap & Golden Stage Lighting
+  service4: "/assets/hero-canopy-lighting.jpg", // Open Lawn Starlit Marquee & Festoon Canopy
   service5: "/assets/service-house-teal-fairy-drapes.jpg", // Villa Facade Teal Drapes & String Lights
   service6: "/assets/service-house-blue-purple-uplight.jpg", // Luxury House Blue Accent & Waterfall Lights
   service7: "/assets/service-lawn-musical-festoon.jpg", // Lawn Musical Stage & Warm Festoon Lights

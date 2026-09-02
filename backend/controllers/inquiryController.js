@@ -184,7 +184,11 @@ Requirements & Venue: ${visionDisplay}
       try {
         const web3Res = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          headers: { 
+            'Content-Type': 'application/json', 
+            'Accept': 'application/json',
+            'User-Agent': 'Mozilla/5.0 (compatible; SurajLightHouse/1.0)'
+          },
           body: JSON.stringify({
             access_key: process.env.WEB3FORMS_ACCESS_KEY,
             subject: `✨ New Event Lighting Inquiry: ${name.trim()} (${finalGuests})`,
@@ -200,12 +204,20 @@ Requirements & Venue: ${visionDisplay}
           })
         });
 
-        const web3Data = await web3Res.json();
-        if (web3Data.success) {
+        const rawText = await web3Res.text();
+        let web3Data = null;
+        try {
+          web3Data = JSON.parse(rawText);
+        } catch {
+          // If Web3Forms returned HTML (e.g. Cloudflare / 502 / WAF), log warning gracefully
+          console.warn(`⚠️ [Web3Forms] API returned non-JSON response (HTTP ${web3Res.status})`);
+        }
+
+        if (web3Data && web3Data.success) {
           emailStatus = 'sent_via_web3forms';
           console.log(`✅ [Web3Forms] Real Email notification delivered directly to your inbox!`);
-        } else {
-          console.warn('⚠️ [Web3Forms] Response:', web3Data.message);
+        } else if (web3Data) {
+          console.warn('⚠️ [Web3Forms] Response:', web3Data.message || 'Submission was not accepted');
         }
       } catch (w3Err) {
         console.error('⚠️ [Web3Forms] Dispatch error:', w3Err.message);

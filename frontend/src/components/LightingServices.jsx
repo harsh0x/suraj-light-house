@@ -28,24 +28,24 @@ export default function LightingServices({ onOpenBooking }) {
     },
     {
       num: "02",
-      title: "Cold Spark Pyros & Dry Ice Low Fog",
+      title: "Royal Dining Arches & Crystal Chandeliers",
       img: IMAGES.service2,
-      desc: "Smokeless cold sparkular pyro fountain blasters, heavy low-lying dry ice cloud fog machines, and dramatic spotlighting for couple grand entries.",
-      serviceName: "Cold Spark Pyros & Low Fog"
+      desc: "Grand arched banquet pavilions illuminated by multi-tiered crystal chandeliers, warm candle glow, and ambient heritage dining table washes.",
+      serviceName: "Royal Dining & Chandelier Decor"
     },
     {
       num: "03",
-      title: "Illuminated Varmala Glass Bridge",
+      title: "Heritage Palace Mandap & Golden Stage Lighting",
       img: IMAGES.service3,
-      desc: "Elevated glowing glass runway bridges with under-deck floral beds, warm globe sphere lights, fairy string curtains, and celebratory confetti blast FX.",
-      serviceName: "Illuminated Varmala Bridge"
+      desc: "Custom sculpted floral mandap backdrops, architectural gold floodlights, warm stage spotlights, and intricate palace stage illumination.",
+      serviceName: "Heritage Mandap & Stage Lighting"
     },
     {
       num: "04",
-      title: "Light-Up Glass Floral Runway",
+      title: "Open Lawn Starlit Marquee & Festoon Canopy",
       img: IMAGES.service4,
-      desc: "Modular LED backlit tempered glass floor tiles filled with fresh floral beds & micro fairy strings, flanked by illuminated crystal branch trees.",
-      serviceName: "Light-up Glass Floral Runway"
+      desc: "Expansive open-sky fairy light marquees, radiating warm festoon bulb strings, structural rigging, and ambient perimeter lawn lighting.",
+      serviceName: "Lawn Starlit Canopy & Festoons"
     },
     {
       num: "05",
