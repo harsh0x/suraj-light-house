@@ -1,8 +1,9 @@
-name = "wedding-planner-website"
+name = "suraj-light-house"
 main = "worker.js"
-compatibility_date = "2024-08-01"
+compatibility_date = "2024-09-23"
 
 [assets]
 directory = "./frontend/dist"
 binding = "ASSETS"
 not_found_handling = "single-page-application"
+html_handling = "auto-trailing-slash"
