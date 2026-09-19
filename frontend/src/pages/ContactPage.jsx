@@ -291,10 +291,10 @@ export default function ContactPage() {
                 For formal quotation requests & schematics:
               </p>
               <a 
-                href="mailto:seo.harsh9351@gmail.com" 
+                href="mailto:Rinkuchinki91@gmail.com" 
                 className="text-xs sm:text-sm font-bold text-[#E63956] hover:text-[#CF203E] transition break-all"
               >
-                seo.harsh9351@gmail.com
+                Rinkuchinki91@gmail.com
               </a>
             </div>
 

@@ -263,7 +263,7 @@ exports.createInquiry = async (req, res) => {
     if (emailStatus !== 'sent_via_web3forms') {
       try {
         const { transporter, isLive, isEthereal } = await createTransporter();
-        const emailRecipient = process.env.EMAIL_TO || process.env.EMAIL_USER || 'seo.harsh9351@gmail.com';
+        const emailRecipient = process.env.EMAIL_TO || process.env.EMAIL_USER || 'Rinkuchinki91@gmail.com';
         const emailSender = process.env.EMAIL_USER || 'leads@surajlighthouse.com';
 
         const mailInfo = await transporter.sendMail({

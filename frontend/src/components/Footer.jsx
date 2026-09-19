@@ -73,9 +73,9 @@ export default function Footer({ onOpenBooking }) {
             </h4>
             <ul className="space-y-2.5 text-xs font-light">
               <li>
-                <a href="mailto:seo.harsh9351@gmail.com" className="hover:text-[#E63956] transition flex items-center justify-center md:justify-start gap-2">
+                <a href="mailto:Rinkuchinki91@gmail.com" className="hover:text-[#E63956] transition flex items-center justify-center md:justify-start gap-2">
                   <i className="fa-regular fa-envelope text-[#E63956] text-xs"></i>
-                  <span>seo.harsh9351@gmail.com</span>
+                  <span>Rinkuchinki91@gmail.com</span>
                 </a>
               </li>
               <li className="pt-1">
