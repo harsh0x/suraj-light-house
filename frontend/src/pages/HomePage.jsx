@@ -5,6 +5,7 @@ import SurajHero from '../components/SurajHero';
 import SurajAbout from '../components/SurajAbout';
 import MosaicGallery from '../components/MosaicGallery';
 import LightingServices from '../components/LightingServices';
+import SilentGeneratorSection from '../components/SilentGeneratorSection';
 import SetupsPortfolio from '../components/SetupsPortfolio';
 import SurajCommitment from '../components/SurajCommitment';
 import LightFeatures from '../components/LightFeatures';
@@ -42,6 +43,12 @@ export default function HomePage({
 
       {/* SECTION 3: Lighting, Tenting & Royal Decor */}
       <LightingServices onOpenBooking={onOpenBooking} />
+
+      {/* SECTION 3.5: Heavy-Duty Silent Generator Rental */}
+      <SilentGeneratorSection 
+        onOpenBooking={onOpenBooking} 
+        onImageClick={onImageClick} 
+      />
 
       {/* SECTION 4: Our Grand Setups & Capabilities */}
       <SetupsPortfolio 

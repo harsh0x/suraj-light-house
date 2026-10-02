@@ -25,6 +25,7 @@ export const IMAGES = {
   service6: "/assets/service-house-blue-purple-uplight.jpg", // Luxury House Blue Accent & Waterfall Lights
   service7: "/assets/service-lawn-musical-festoon.jpg", // Lawn Musical Stage & Warm Festoon Lights
   service8: "/assets/service-sangeet-truss-gold-stage.jpg", // Sangeet Qawwali Truss Stage & Canopy
+  generatorRental: "/assets/silent-generator-rental.jpg", // Heavy-Duty Silent DG Genset Rental
 
   // Portfolio Carousel (Grand Setups & Stagecraft)
   portfolio1: "/assets/portfolio-dj-dance-sangeet.jpg", // DJ Concert Sangeet Truss Setup

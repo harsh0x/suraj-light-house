@@ -229,6 +229,7 @@ export default function LightingInquiryForm({ onShowToast }) {
                   <option value="Concert Stage, Truss & Moving Beams">Concert Stage, Truss & Moving Beams</option>
                   <option value="Starry Night Fairy Tunnel & Edison Globes">Starry Night Fairy Tunnel & Edison Globes</option>
                   <option value="Architectural Facade Wash & Laser FX">Architectural Facade Wash & Laser FX</option>
+                  <option value="Heavy-Duty Silent Generator (DG Genset) Rental">Heavy-Duty Silent Generator (DG Genset) Rental</option>
                   <option value="Full Turnkey Event Illumination & Silent Power">Full Turnkey Event Illumination & Silent Power</option>
                 </select>
               </div>

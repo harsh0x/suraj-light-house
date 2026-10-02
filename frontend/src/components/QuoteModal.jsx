@@ -231,6 +231,10 @@ export default function QuoteModal({ isOpen, onClose, initialService = 'Full Eve
                     className="w-full px-4 py-3 rounded-xl border border-rose-200/90 bg-[#FAF6F0] focus:outline-none focus:ring-2 focus:ring-[#E63956] focus:border-transparent text-sm text-[#1A1A1A] shadow-sm transition cursor-pointer font-medium"
                   >
                     <option value="Full Event Lighting">Full Event Lighting</option>
+                    <option value="Silent Generator Rental">Silent Generator Rental</option>
+                    <option value="Silent Generator Rental (25-62.5 kVA)">Silent Generator Rental (25-62.5 kVA)</option>
+                    <option value="Silent Generator Rental (125-250 kVA)">Silent Generator Rental (125-250 kVA)</option>
+                    <option value="Silent Generator Rental (320-500+ kVA)">Silent Generator Rental (320-500+ kVA)</option>
                     <option value="Tenting & Decor">Tenting & Decor</option>
                     <option value="Corporate Setup">Corporate Setup</option>
                     <option value="Royal Heritage Wedding Decor">Royal Heritage Wedding Decor</option>
